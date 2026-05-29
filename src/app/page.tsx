@@ -191,12 +191,74 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="border-t border-[#0f3d2e]/10 px-6 py-10">
-        <div className="mx-auto flex max-w-7xl flex-col justify-between gap-4 text-sm text-[#12231c]/55 md:flex-row">
-          <p>© ENFARM. All rights reserved.</p>
-          <p>Livestock Biotechnology & Functional Feed Ingredients</p>
+      <footer className="bg-[#0f3d2e] text-white">
+  <div className="mx-auto max-w-7xl px-6 py-12">
+    <div className="grid gap-10 md:grid-cols-2">
+      {/* Company Info */}
+      <div>
+        <h3 className="text-2xl font-bold">(주)엔팜</h3>
+
+        <p className="mt-3 text-lg font-medium text-green-300">
+          면역이 방역이다!
+        </p>
+
+        <p className="mt-4 max-w-md leading-relaxed text-gray-300">
+          엔팜은 기능성 바이오 소재와 단백질 원료 솔루션을 통해
+          건강한 축산과 지속가능한 생산성 향상에 기여합니다.
+        </p>
+      </div>
+
+      {/* Contact */}
+      <div>
+        <h4 className="text-lg font-semibold">Contact</h4>
+
+        <div className="mt-4 space-y-4 text-gray-300">
+          <div>
+            <p className="font-medium text-white">주소</p>
+            <p>경기도 평택시 청북읍 청북중앙로 315-5</p>
+          </div>
+
+          <div>
+            <p className="font-medium text-white">대표전화</p>
+            <p>031-683-2051</p>
+          </div>
+
+          <div>
+            <p className="font-medium text-white">팩스</p>
+            <p>031-683-2053</p>
+          </div>
+
+          <div>
+            <p className="font-medium text-white">제품문의</p>
+            <p>010-5232-3103</p>
+          </div>
+
+          <div>
+            <p className="font-medium text-white">E-mail</p>
+            <p>nfarm3103@naver.com</p>
+          </div>
         </div>
-      </footer>
+      </div>
+    </div>
+
+    <div className="mt-10 border-t border-white/20 pt-6 text-sm text-gray-400">
+      <p>(주)엔팜</p>
+      <p className="mt-1">
+        경기도 평택시 청북읍 청북중앙로 315-5
+      </p>
+      <p className="mt-1">
+        대표전화 031-683-2051 | 팩스 031-683-2053
+      </p>
+      <p className="mt-1">
+        제품문의 010-5232-3103 | E-mail nfarm3103@naver.com
+      </p>
+
+      <p className="mt-4">
+        © 2026 ENFARM Co., Ltd. All Rights Reserved.
+      </p>
+    </div>
+  </div>
+</footer>
     </main>
   );
 }
