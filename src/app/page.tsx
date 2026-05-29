@@ -59,12 +59,10 @@ export default function Home() {
         <div className="relative mx-auto grid max-w-7xl gap-16 md:grid-cols-[1.1fr_0.9fr] md:items-center">
           <div>
             <p className="mb-5 text-sm font-semibold uppercase tracking-[0.35em] text-[#6e8b74]">
-              Livestock Biotechnology
+              (주)엔팜은 (주)케이피드와 함께합니다.
             </p>
             <h1 className="max-w-4xl text-5xl font-bold leading-[1.05] tracking-tight text-[#0f3d2e] md:text-7xl">
-              Healthy Animals,
-              <br />
-              Sustainable Farming
+              면역이 방역이다!
             </h1>
             <p className="mt-8 max-w-2xl text-xl leading-8 text-[#12231c]/75">
               엔팜은 축산 생산성 향상을 위한 기능성 바이오 소재와 단백질 원료 솔루션을 제공합니다.
