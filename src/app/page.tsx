@@ -180,10 +180,9 @@ export default function Home() {
           </div>
           <div className="rounded-3xl bg-white/10 p-7">
             <div className="space-y-5 text-white/80">
-              <p><strong className="text-white">회사명</strong> 엔팜</p>
-              <p><strong className="text-white">도메인</strong> enfarm.co.kr</p>
-              <p><strong className="text-white">이메일</strong> contact@enfarm.co.kr</p>
-              <p><strong className="text-white">전화</strong> 000-0000-0000</p>
+              <p><strong className="text-white">회사명</strong> (주)엔팜</p>
+              <p><strong className="text-white">이메일</strong> nfarm3103@naver.com</p>
+              <p><strong className="text-white">전화</strong> 010-5232-3103</p>
             </div>
             <a href="mailto:contact@enfarm.co.kr" className="mt-8 inline-block rounded-full bg-[#d9b26f] px-7 py-3 font-bold text-[#0f3d2e]">
               이메일 문의하기
