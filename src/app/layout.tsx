@@ -2,8 +2,13 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "ENFARM | Livestock Biotechnology",
-  description: "축산 생산성 향상을 위한 기능성 바이오 소재 솔루션 기업, 엔팜",
+  title: "(주)엔팜 | 면역이 방역이다!",
+  description: "주식회사 엔팜",
+  icons: {
+
+    icon: "/favicon.png",
+
+  },
 };
 
 export default function RootLayout({
