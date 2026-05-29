@@ -1,3 +1,4 @@
+import Image from "next/image";
 const products = [
   {
     name: "Amino-F",
@@ -31,9 +32,15 @@ export default function Home() {
     <main className="min-h-screen">
       <header className="fixed left-0 right-0 top-0 z-50 border-b border-[#0f3d2e]/10 bg-[#f7f5ef]/90 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-          <a href="#" className="text-xl font-bold tracking-tight text-[#0f3d2e]">
-            ENFARM
-          </a>
+        <a href="#" className="flex items-center gap-3">
+  <Image
+    src="/logo.png"
+    alt="ENFARM"
+    width={140}
+    height={60}
+    priority
+  />
+</a>
           <nav className="hidden items-center gap-8 text-sm font-medium text-[#12231c]/75 md:flex">
             <a href="#company" className="hover:text-[#0f3d2e]">Company</a>
             <a href="#technology" className="hover:text-[#0f3d2e]">Technology</a>
