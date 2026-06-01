@@ -41,18 +41,18 @@ export default function Home() {
     <main className="min-h-screen bg-white text-[#111827]">
       {/* Header */}
       <header className="sticky top-0 z-50 border-b border-gray-200 bg-white/95 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3">
           <a href="#" className="flex items-center">
             <Image
               src="/logo.png"
               alt="엔팜 로고"
-              width={180}
-              height={60}
+              width={140}
+              height={47}
               priority
             />
           </a>
 
-          <nav className="hidden items-center gap-8 text-sm font-semibold text-gray-700 md:flex">
+          <nav className="hidden items-center gap-10 text-lg font-semibold text-gray-700 md:flex">
             <a href="#about" className="hover:text-[#008000]">회사소개</a>
             <a href="#business" className="hover:text-[#008000]">사업영역</a>
             <a href="#products" className="hover:text-[#008000]">제품소개</a>
