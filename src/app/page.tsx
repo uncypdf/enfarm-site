@@ -39,29 +39,7 @@ const business = [
 export default function Home() {
   return (
     <main className="min-h-screen bg-white text-[#111827]">
-      {/* Header */}
-      <header className="sticky top-0 z-50 border-b border-gray-200 bg-white/95 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3">
-          <a href="#" className="flex items-center">
-            <Image
-              src="/logo.png"
-              alt="엔팜 로고"
-              width={100}
-              height={34}
-              priority
-            />
-          </a>
-
-          <nav className="hidden items-center gap-10 text-lg font-semibold text-gray-700 md:flex">
-            <a href="/about" className="hover:text-[#008000]">회사소개</a>
-            <a href="/technology" className="hover:text-[#008000]">기술/특징</a>
-            <a href="/products" className="hover:text-[#008000]">제품소개</a>
-            <a href="/analysis" className="hover:text-[#008000]">분석/실증</a>
-            <a href="/resources" className="hover:text-[#008000]">자료실</a>
-            <a href="/branches" className="hover:text-[#008000]">문의하기</a>
-          </nav>
-        </div>
-      </header>
+     
 
       {/* Main Visual */}
       <section className="relative overflow-hidden bg-[#f5f7f2]">
@@ -298,73 +276,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-[#0f3d2e] text-white">
-        <div className="mx-auto max-w-7xl px-6 py-12">
-          <div className="grid gap-10 md:grid-cols-2">
-            <div>
-              <h3 className="text-2xl font-bold">(주)엔팜</h3>
-
-              <p className="mt-3 text-lg font-medium text-green-300">
-                면역이 방역이다!
-              </p>
-
-              <p className="mt-4 max-w-md leading-relaxed text-gray-300">
-                엔팜은 기능성 바이오 소재와 단백질 원료 솔루션을 통해
-                건강한 축산과 지속가능한 생산성 향상에 기여합니다.
-              </p>
-            </div>
-
-            <div>
-              <h4 className="text-lg font-semibold">Contact</h4>
-
-              <div className="mt-4 space-y-4 text-gray-300">
-                <div>
-                  <p className="font-medium text-white">주소</p>
-                  <p>경기도 평택시 청북읍 청북중앙로 315-5</p>
-                </div>
-
-                <div>
-                  <p className="font-medium text-white">대표전화</p>
-                  <p>031-683-2051</p>
-                </div>
-
-                <div>
-                  <p className="font-medium text-white">팩스</p>
-                  <p>031-683-2053</p>
-                </div>
-
-                <div>
-                  <p className="font-medium text-white">제품문의</p>
-                  <p>010-5232-3103</p>
-                </div>
-
-                <div>
-                  <p className="font-medium text-white">E-mail</p>
-                  <p>nfarm3103@naver.com</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="mt-10 border-t border-white/20 pt-6 text-sm text-gray-400">
-            <p>(주)엔팜</p>
-            <p className="mt-1">
-              경기도 평택시 청북읍 청북중앙로 315-5
-            </p>
-            <p className="mt-1">
-              대표전화 031-683-2051 | 팩스 031-683-2053
-            </p>
-            <p className="mt-1">
-              제품문의 010-5232-3103 | E-mail nfarm3103@naver.com
-            </p>
-
-            <p className="mt-4">
-              © 2026 ENFARM Co., Ltd. All Rights Reserved.
-            </p>
-          </div>
-        </div>
-      </footer>
     </main>
   );
 }
