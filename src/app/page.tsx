@@ -53,10 +53,12 @@ export default function Home() {
           </a>
 
           <nav className="hidden items-center gap-10 text-lg font-semibold text-gray-700 md:flex">
-            <a href="#about" className="hover:text-[#008000]">회사소개</a>
-            <a href="#business" className="hover:text-[#008000]">사업영역</a>
-            <a href="#products" className="hover:text-[#008000]">제품소개</a>
-            <a href="#contact" className="hover:text-[#008000]">문의하기</a>
+            <a href="/about" className="hover:text-[#008000]">회사소개</a>
+            <a href="/technology" className="hover:text-[#008000]">기술/특징</a>
+            <a href="/products" className="hover:text-[#008000]">제품소개</a>
+            <a href="/analysis" className="hover:text-[#008000]">분석/실증</a>
+            <a href="/resources" className="hover:text-[#008000]">자료실</a>
+            <a href="/branches" className="hover:text-[#008000]">문의하기</a>
           </nav>
         </div>
       </header>
