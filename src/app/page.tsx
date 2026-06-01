@@ -46,8 +46,8 @@ export default function Home() {
             <Image
               src="/logo.png"
               alt="엔팜 로고"
-              width={140}
-              height={47}
+              width={100}
+              height={34}
               priority
             />
           </a>
