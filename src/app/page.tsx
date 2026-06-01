@@ -1,3 +1,4 @@
+import Image from "next/image";
 const products = [
   {
     title: "아미노 에프",
@@ -41,8 +42,14 @@ export default function Home() {
       {/* Header */}
       <header className="sticky top-0 z-50 border-b border-gray-200 bg-white/95 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-          <a href="#" className="text-2xl font-black text-[#008000]">
-            Enfarm
+          <a href="#" className="flex items-center">
+            <Image
+              src="/logo.png"
+              alt="엔팜 로고"
+              width={180}
+              height={60}
+              priority
+            />
           </a>
 
           <nav className="hidden items-center gap-8 text-sm font-semibold text-gray-700 md:flex">
@@ -93,8 +100,14 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex h-[420px] items-center justify-center rounded-3xl border-2 border-dashed border-gray-300 bg-white text-gray-400">
-            메인 이미지 영역
+          <div className="relative h-[420px] overflow-hidden rounded-3xl">
+            <Image
+              src="/main1.png"
+              alt="엔팜 메인 이미지"
+              fill
+              priority
+              className="object-cover"
+            />
           </div>
         </div>
       </section>
