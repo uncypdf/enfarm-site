@@ -66,7 +66,7 @@ export default function ProductsPage() {
             {products.map((product) => (
               <article
                 key={product.name}
-                className="group min-w-0 overflow-hidden rounded-3xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+                className="group flex min-w-0 flex-col overflow-hidden rounded-3xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
               >
                 <div className="relative h-96 bg-gradient-to-b from-[#fafafa] to-[#f1f5f1]">
                   <Image
@@ -77,7 +77,7 @@ export default function ProductsPage() {
                   />
                 </div>
 
-                <div className="p-8">
+                <div className="flex flex-1 flex-col p-8">
                   <p className="text-sm font-bold text-[#008000]">
                     {product.target}
                   </p>
@@ -89,16 +89,16 @@ export default function ProductsPage() {
                     {product.name}
                   </h3>
 
-                  <p className="mt-5 leading-7 text-gray-600">
+                  <p className="mt-5 min-h-[56px] leading-7 text-gray-600">
                     {product.desc}
                   </p>
 
-                  <ul className="mt-8 space-y-3 text-gray-700">
+                  <ul className="mt-8 min-h-[108px] space-y-3 border-t pt-6 text-gray-700">
                     {product.points.map((point) => (
                       <li key={point}>• {point}</li>
                     ))}
                   </ul>
-                  <div className="mt-8 border-t pt-6">
+                  <div className="mt-auto border-t pt-6">
                     <button className="w-full rounded-xl bg-[#0f3d2e] px-5 py-3 font-semibold text-white transition hover:bg-[#14533f]">
                       제품 자세히 보기
                     </button>
@@ -126,6 +126,8 @@ export default function ProductsPage() {
               alt="아미노에프 코디팜 제품 및 프로그램 설명"
               width={1600}
               height={900}
+              priority
+              sizes="100vw"
               className="w-full"
             />
           </div>
