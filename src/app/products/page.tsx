@@ -1,3 +1,182 @@
-export default function Page() {
-  return <div>준비중</div>;
+import Image from "next/image";
+
+const products = [
+  {
+    name: "아미노햄",
+    target: "배합사료 원료용",
+    desc: "양돈, 양계, 양어, 반려동물용 기능성 저분자 단백질 원료",
+    points: ["H-LMP 기반 단백질 원료", "다축종 적용 가능", "사료 원료용 공급"],
+  },
+  {
+    name: "아미노에프",
+    target: "모돈용",
+    desc: "임신돈·포유돈의 면역과 초유 품질 관리를 위한 기능성 제품",
+    points: ["무유증 예방 지원", "초유 공급 강화", "모체 이행항체 유지"],
+  },
+  {
+    name: "코디팜",
+    target: "자돈용",
+    desc: "자돈의 초기 면역력과 성장 회복을 위한 기능성 제품",
+    points: ["PED·PRRS 예방 지원", "이유 후 성장 관리", "초기 회복력 강화"],
+  },
+  {
+    name: "락토펠렛",
+    target: "발효사료",
+    desc: "농장 사육단계별 맞춤형 악취절감 발효사료",
+    points: ["펠렛형·가루형 공급", "악취 저감", "친환경 농장 맞춤사료"],
+  },
+];
+
+export default function ProductsPage() {
+  return (
+    <main className="min-h-screen bg-white">
+      <section className="bg-[#0f3d2e] py-24 text-white">
+        <div className="mx-auto max-w-7xl px-6">
+          <h1 className="text-5xl font-black">제품소개</h1>
+          <p className="mt-4 text-lg text-gray-300">ENFARM PRODUCTS</p>
+        </div>
+      </section>
+
+      <section className="border-b">
+        <div className="mx-auto max-w-7xl px-6 py-4 text-sm text-gray-500">
+          HOME &gt; 제품소개
+        </div>
+      </section>
+
+      <div className="mx-auto max-w-7xl px-6 py-20">
+        <section className="mb-24 text-center">
+          <h2 className="text-5xl font-black text-[#0f3d2e]">
+            면역이 방역이다
+          </h2>
+          <p className="mx-auto mt-8 max-w-4xl text-xl leading-9 text-gray-700">
+            엔팜은 H-LMP 저분자 단백질 기술을 기반으로 PED·PRRS 예방과
+            생산성 향상을 위한 기능성 사료 원료와 축산 솔루션을 제공합니다.
+          </p>
+        </section>
+
+        <section className="mb-32">
+          <h2 className="mb-12 text-4xl font-black text-gray-900">
+            주요 제품군
+          </h2>
+
+          <div className="grid gap-8 md:grid-cols-2">
+            {products.map((product) => (
+              <article
+                key={product.name}
+                className="overflow-hidden rounded-3xl border bg-white shadow-sm"
+              >
+                <div className="flex h-72 items-center justify-center bg-[#f2f7f2] text-[#008000]">
+                  <div className="text-center">
+                    <p className="text-lg font-bold">제품 이미지 영역</p>
+                    <p className="mt-2 text-sm text-gray-500">
+                      {product.name} 포장지 이미지 추후 삽입
+                    </p>
+                  </div>
+                </div>
+
+                <div className="p-8">
+                  <p className="text-sm font-bold text-[#008000]">
+                    {product.target}
+                  </p>
+
+                  <h3 className="mt-3 text-3xl font-black text-gray-900">
+                    {product.name}
+                  </h3>
+
+                  <p className="mt-5 leading-7 text-gray-600">
+                    {product.desc}
+                  </p>
+
+                  <ul className="mt-8 space-y-3 text-gray-700">
+                    {product.points.map((point) => (
+                      <li key={point}>• {point}</li>
+                    ))}
+                  </ul>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="mb-32">
+          <h2 className="mb-8 text-4xl font-black text-gray-900">
+            STOP 2P 예방 프로그램
+          </h2>
+
+          <p className="mb-10 max-w-4xl text-lg leading-8 text-gray-700">
+            STOP 2P 프로그램은 PED와 PRRS로 인한 생산성 저하를 최소화하기
+            위한 엔팜의 통합 면역 솔루션입니다. 모돈, 포유돈, 자돈의
+            사육단계별 상황에 따라 아미노에프와 코디팜을 적용합니다.
+          </p>
+
+          <div className="overflow-hidden rounded-3xl border bg-white">
+            <Image
+              src="/stop2p-program.png"
+              alt="아미노에프 코디팜 제품 및 프로그램 설명"
+              width={1600}
+              height={900}
+              className="w-full"
+            />
+          </div>
+        </section>
+
+        <section className="mb-32 rounded-3xl bg-[#f7faf7] p-10">
+          <h2 className="text-3xl font-black text-[#0f3d2e]">
+            제품 및 프로그램 적용
+          </h2>
+
+          <div className="mt-10 grid gap-8 md:grid-cols-3">
+            <div className="rounded-2xl bg-white p-8">
+              <h3 className="text-xl font-bold">임신돈·모돈</h3>
+              <p className="mt-4 leading-7 text-gray-600">
+                아미노에프를 사료 톤당 적용하여 모돈의 면역과 초유 공급을
+                지원합니다.
+              </p>
+            </div>
+
+            <div className="rounded-2xl bg-white p-8">
+              <h3 className="text-xl font-bold">포유돈</h3>
+              <p className="mt-4 leading-7 text-gray-600">
+                PED 및 질병 발생 시 아미노에프와 코디팜을 상황에 따라
+                적용합니다.
+              </p>
+            </div>
+
+            <div className="rounded-2xl bg-white p-8">
+              <h3 className="text-xl font-bold">자돈</h3>
+              <p className="mt-4 leading-7 text-gray-600">
+                포유기부터 55일령 전후까지 코디팜을 통해 초기 면역과 회복을
+                지원합니다.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="rounded-3xl bg-[#0f3d2e] px-10 py-16 text-white">
+          <h2 className="text-4xl font-black">제품 상담이 필요하신가요?</h2>
+          <p className="mt-6 text-lg leading-8 text-gray-300">
+            농장 상황, 사육단계, 질병 이력에 따라 적합한 제품과 적용 방법을
+            안내해드립니다.
+          </p>
+
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
+            <div>
+              <p className="text-sm text-gray-400">대표전화</p>
+              <p className="mt-2 text-xl font-bold">031-683-2051</p>
+            </div>
+
+            <div>
+              <p className="text-sm text-gray-400">제품문의</p>
+              <p className="mt-2 text-xl font-bold">010-5232-3103</p>
+            </div>
+
+            <div>
+              <p className="text-sm text-gray-400">E-mail</p>
+              <p className="mt-2 text-xl font-bold">nfarm3103@naver.com</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  );
 }
