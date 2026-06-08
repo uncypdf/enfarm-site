@@ -1,5 +1,3 @@
-
-
 import Image from "next/image";
 
 export default function SidAnalysisPage() {
@@ -35,7 +33,9 @@ export default function SidAnalysisPage() {
 
             <p className="mt-4 text-lg leading-8 text-gray-700">
               혈장단백 제조사 APC(미국), DAKA(독일)사 제공 자료
-              (2014년 농림부 주관 동물혈액 자원화 국제세미나 자료) / 한국단미사료협회 (2023. 7) / 한국식품개발연구원 (2018)
+              (2014년 농림부 주관 동물혈액 자원화 국제세미나 자료)
+              / 한국단미사료협회 (2023.7)
+              / 한국식품개발연구원 (2018)
             </p>
           </div>
         </section>
@@ -45,14 +45,10 @@ export default function SidAnalysisPage() {
             1. 아미노햄(H-LMP) 유사 제품 비교 및 차별성
           </h3>
 
-          <p className="mb-8 max-w-5xl text-lg leading-8 text-gray-700">
-            아미노햄(H-LMP)과 수입산 혈장단백의 주요 성분, 분자량, 조회분, 햄철, 펩신소화율, 효과적 사용최소량, SDI 등을 비교한 자료임.
-          </p>
-
           <div className="overflow-hidden rounded-3xl border bg-white">
             <Image
               src="/sid1.png"
-              alt="아미노햄 H-LMP 유사 제품 비교 및 차별성"
+              alt="아미노햄 유사 제품 비교"
               width={1600}
               height={900}
               className="w-full"
@@ -61,11 +57,14 @@ export default function SidAnalysisPage() {
 
           <div className="mt-10 space-y-5 rounded-3xl bg-[#f7faf7] p-8 text-lg leading-8 text-gray-700">
             <p>
-              혈장단백은 항응고제 사용으로 회분 및 나트륨 함량이 높으며 3차원 이상의 고분자 단백질(글로불린)로 구성되어 바이러스성 질병 예방이나 치료시 햄철함유 저분자형 단백질(H-LMP) 보충이 필요함.
+              혈장단백은 항응고제 사용으로 회분 및 나트륨 함량이 높으며
+              3차원 이상의 고분자 단백질(글로불린)로 구성되어 바이러스성 질병
+              예방이나 치료시 햄철함유 저분자형 단백질(H-LMP) 보충이 필요함.
             </p>
 
             <p>
-              혈장단백은 제조공정중 적혈구 90%이상 원심분리되므로 빈혈 예방을 위한 햄철 함량 미흡.
+              혈장단백은 제조공정중 적혈구 90%이상 원심분리되므로 빈혈 예방을
+              위한 햄철 함량 미흡.
             </p>
           </div>
         </section>
@@ -75,14 +74,10 @@ export default function SidAnalysisPage() {
             2. 아미노햄(H-LMP)과 유사 제품 분자량 및 SID 비교
           </h3>
 
-          <p className="mb-8 max-w-5xl text-lg leading-8 text-gray-700">
-            아미노햄(H-LMP)과 혈장단백 성분의 단백질 구조, 분자량, SID 및 효과최소량을 비교한 자료임.
-          </p>
-
           <div className="overflow-hidden rounded-3xl border bg-white">
             <Image
               src="/sid2.png"
-              alt="아미노햄 H-LMP과 혈장단백 성분 분자량 및 SID 비교"
+              alt="SID 비교"
               width={1600}
               height={900}
               className="w-full"
@@ -119,7 +114,7 @@ export default function SidAnalysisPage() {
                 0.2% 이상
               </div>
               <p className="mt-3 text-gray-600">
-                효과최소량(사료량 기준)
+                효과최소량
               </p>
             </div>
           </div>
