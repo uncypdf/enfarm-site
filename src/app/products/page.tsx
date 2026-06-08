@@ -7,6 +7,7 @@ const products = [
     image: "/pd1.png",
     desc: "임신돈·포유돈의 면역과 초유 품질 관리를 위한 기능성 제품",
     points: ["무유증 예방 지원", "초유 공급 강화", "모체 이행항체 유지"],
+    tagline: "모돈 면역 및 초유 품질 관리 솔루션",
   },
   {
     name: "코디팜",
@@ -14,6 +15,7 @@ const products = [
     image: "/pd2.png",
     desc: "자돈의 초기 면역력과 성장 회복을 위한 기능성 제품",
     points: ["PED·PRRS 예방 지원", "이유 후 성장 관리", "초기 회복력 강화"],
+    tagline: "자돈 초기 면역력 및 성장 관리 솔루션",
   },
   {
     name: "에그밀",
@@ -21,6 +23,7 @@ const products = [
     image: "/pd3.png",
     desc: "양돈, 양계, 양어, 반려동물용 기능성 단백질 원료",
     points: ["H-LMP 기반 단백질 원료", "다축종 적용 가능", "사료 원료용 공급"],
+    tagline: "H-LMP 기반 기능성 단백질 원료",
   },
 ];
 
@@ -56,13 +59,16 @@ export default function ProductsPage() {
             주요 제품군
           </h2>
 
-          <div className="grid gap-8 md:grid-cols-2">
+          <div
+            className="grid gap-8"
+            style={{ gridTemplateColumns: "repeat(3, minmax(0, 1fr))" }}
+          >
             {products.map((product) => (
               <article
                 key={product.name}
-                className="overflow-hidden rounded-3xl border bg-white shadow-sm"
+                className="group min-w-0 overflow-hidden rounded-3xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
               >
-                <div className="relative h-96 bg-[#f7f7f7]">
+                <div className="relative h-96 bg-gradient-to-b from-[#fafafa] to-[#f1f5f1]">
                   <Image
                     src={product.image}
                     alt={product.name}
@@ -75,8 +81,11 @@ export default function ProductsPage() {
                   <p className="text-sm font-bold text-[#008000]">
                     {product.target}
                   </p>
+                  <div className="mt-3 inline-flex rounded-full bg-[#eef7ee] px-3 py-1 text-xs font-semibold text-[#0f3d2e]">
+                    {product.tagline}
+                  </div>
 
-                  <h3 className="mt-3 text-3xl font-black text-gray-900">
+                  <h3 className="mt-4 text-3xl font-black text-gray-900">
                     {product.name}
                   </h3>
 
@@ -89,6 +98,11 @@ export default function ProductsPage() {
                       <li key={point}>• {point}</li>
                     ))}
                   </ul>
+                  <div className="mt-8 border-t pt-6">
+                    <button className="w-full rounded-xl bg-[#0f3d2e] px-5 py-3 font-semibold text-white transition hover:bg-[#14533f]">
+                      제품 자세히 보기
+                    </button>
+                  </div>
                 </div>
               </article>
             ))}
