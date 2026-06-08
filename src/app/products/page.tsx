@@ -2,28 +2,25 @@ import Image from "next/image";
 
 const products = [
   {
-    name: "아미노햄",
-    target: "배합사료 원료용",
-    desc: "양돈, 양계, 양어, 반려동물용 기능성 저분자 단백질 원료",
-    points: ["H-LMP 기반 단백질 원료", "다축종 적용 가능", "사료 원료용 공급"],
-  },
-  {
     name: "아미노에프",
     target: "모돈용",
+    image: "/pd1.png",
     desc: "임신돈·포유돈의 면역과 초유 품질 관리를 위한 기능성 제품",
     points: ["무유증 예방 지원", "초유 공급 강화", "모체 이행항체 유지"],
   },
   {
     name: "코디팜",
     target: "자돈용",
+    image: "/pd2.png",
     desc: "자돈의 초기 면역력과 성장 회복을 위한 기능성 제품",
     points: ["PED·PRRS 예방 지원", "이유 후 성장 관리", "초기 회복력 강화"],
   },
   {
-    name: "락토펠렛",
-    target: "발효사료",
-    desc: "농장 사육단계별 맞춤형 악취절감 발효사료",
-    points: ["펠렛형·가루형 공급", "악취 저감", "친환경 농장 맞춤사료"],
+    name: "에그밀",
+    target: "원료용",
+    image: "/pd3.png",
+    desc: "양돈, 양계, 양어, 반려동물용 기능성 단백질 원료",
+    points: ["H-LMP 기반 단백질 원료", "다축종 적용 가능", "사료 원료용 공급"],
   },
 ];
 
@@ -65,13 +62,13 @@ export default function ProductsPage() {
                 key={product.name}
                 className="overflow-hidden rounded-3xl border bg-white shadow-sm"
               >
-                <div className="flex h-72 items-center justify-center bg-[#f2f7f2] text-[#008000]">
-                  <div className="text-center">
-                    <p className="text-lg font-bold">제품 이미지 영역</p>
-                    <p className="mt-2 text-sm text-gray-500">
-                      {product.name} 포장지 이미지 추후 삽입
-                    </p>
-                  </div>
+                <div className="relative h-96 bg-[#f7f7f7]">
+                  <Image
+                    src={product.image}
+                    alt={product.name}
+                    fill
+                    className="object-contain p-6"
+                  />
                 </div>
 
                 <div className="p-8">
