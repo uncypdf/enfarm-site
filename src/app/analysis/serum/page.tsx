@@ -47,11 +47,7 @@ export default function SerumAnalysisPage() {
           </h3>
 
           <p className="mt-6 max-w-5xl text-lg leading-8 text-gray-700">
-            이유자돈 114두를 대상으로 이유 전부터 60일령까지 아미노햄을
-            첨가한 사료를 급여한 후, 혈액 내 백혈구와 적혈구 세포의 변화
-            추이를 분석했습니다. 분석 결과, 아미노햄 급여군에서 백혈구와
-            적혈구가 안정적으로 증가하여 면역 기능 강화에 효과가 있는 것으로
-            분석되었습니다.
+            Fig1, Fig2: 이유자돈(이유 전부터 60일령까지, 114두)을 대상으로 해당 사료에 아미노햄을 첨가하여 급여한 후, 혈액 내 백혈구와 적혈구 세포의 변화 추이를 분석한 결과, 아미노햄 급여군에서 백혈구와 적혈구가 안정적으로 증가하여 면역 기능 강화에 효과가 있는 것으로 분석됨.
           </p>
 
           <div className="mt-10 overflow-hidden rounded-3xl border bg-white">
@@ -67,33 +63,28 @@ export default function SerumAnalysisPage() {
 
         <section className="mb-24">
           <h3 className="text-3xl font-black text-gray-900">
-            2. IgG · IgM · IgA 혈청 내 면역물질 분석
+            2. 코디팜의 이유자돈에 대한 IgG · IgM · IgA 혈청 내 면역물질 분석시험
           </h3>
 
           <div className="mt-8 grid gap-8 md:grid-cols-3">
             <div className="rounded-2xl bg-[#f7faf7] p-8">
               <h4 className="text-2xl font-bold text-[#0f3d2e]">IgG</h4>
               <p className="mt-4 leading-7 text-gray-700">
-                혈액과 조직 내 가장 많은 항체로 감염 초기 면역 강화 및
-                2차·3차 감염 예방에 관여합니다. 시험구에서는 이유 후에도
-                꾸준한 증가 경향을 보였습니다.
+                Fig3. IgG : 혈액과 조직내 가장 많은 항체(70~80%)로 감염초기 면역강화기능으로 2차, 3차 감염 예방기능을 함. 대조구와 달리 이유 후에도 꾸준한 증가로 초기면역강화에 중요한 기능을 하고 있음.
               </p>
             </div>
 
             <div className="rounded-2xl bg-[#f7faf7] p-8">
               <h4 className="text-2xl font-bold text-[#0f3d2e]">IgM</h4>
               <p className="mt-4 leading-7 text-gray-700">
-                감염 중기에 증가하는 항체로, 아미노햄 급여구에서는 초기
-                IgG 형성 효과에 따라 IgM 증가가 감소 추이를 나타냈습니다.
+                Fig4. IgM : 아미노햄 급여구에서 감염초기 우세하게 생성된 IgG의 초기면역강화 효과로 감염중기에 증가하는 IgM의 증가가 코디팜 처리구에서는 감소추이를 나타냄.
               </p>
             </div>
 
             <div className="rounded-2xl bg-[#f7faf7] p-8">
               <h4 className="text-2xl font-bold text-[#0f3d2e]">IgA</h4>
               <p className="mt-4 leading-7 text-gray-700">
-                호흡기 및 장점막 세포 감염 차단에 관여하는 면역항체입니다.
-                대조구는 60일령 전후 감소했으나 시험구에서는 유지 경향을
-                보였습니다.
+                Fig5. IgA : 바이러스나 세균이 호흡기나 장점막 세포의 감염을 차단하는 면역항체로 대조구에서는 60일령 전후하여 감소를 보였으나 시험구에서는 계속 유지를 하고 있음.
               </p>
             </div>
           </div>
@@ -112,10 +103,7 @@ export default function SerumAnalysisPage() {
         <section className="rounded-3xl bg-[#0f3d2e] px-10 py-14 text-white">
           <h3 className="text-3xl font-black">분석 결과 요약</h3>
           <p className="mt-6 text-lg leading-8 text-gray-300">
-            적혈구와 백혈구 세포의 혈중 변화와 혈청 내 IgG, IgM, IgA 농도
-            변화를 분석한 결과, 코디팜은 질병 감염 초기에 효과적인 면역항체
-            형성을 유도하며 이유 전후부터 육성 초기 단계의 바이러스성 질병
-            예방에 효과를 보이는 것으로 확인되었습니다.
+            적혈구와 백혈구 세포의 혈중변화와 혈청 내 IgG, IgM, IgA의 농도변화를 분석한 결과, 코디팜은 질병감염 초기에 효과적인 면역항체 형성을 나타내므로 이유전후부터 육성 초기단계의 바이러스성 질병예방에 효과를 보이고 있다.
           </p>
         </section>
       </section>
