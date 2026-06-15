@@ -209,8 +209,8 @@ export default function TechnologyPage() {
           </h2>
 
           <p className="mt-8 text-xl leading-9 text-gray-300">
-            PED와 PRRS로 인한 생산성 저하를 최소화하기 위해 개발된
-            엔팜의 통합 면역 프로그램입니다.
+            PED와 PRRS로 인한 생산성 저하를 극복하기 위해 개발된
+            엔팜의 모돈과 자돈의 면역 강화 프로그램입니다.
           </p>
 
           <div className="mt-12 grid gap-6 md:grid-cols-5">
@@ -223,7 +223,8 @@ export default function TechnologyPage() {
             </div>
 
             <div className="rounded-xl bg-white/10 p-6 text-center">
-              이유자돈의 2차 ABP 예방
+              이유자돈의 2차 
+              <br></br>ABP 예방
             </div>
 
             <div className="rounded-xl bg-white/10 p-6 text-center">
