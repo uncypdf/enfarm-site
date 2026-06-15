@@ -86,8 +86,8 @@ export default function Home() {
                 제품 보기
               </a>
               <a
-                href="#contact"
-                className="rounded-md border border-[#008000] px-7 py-3 font-bold text-[#008000]"
+                href="tel:010-5232-3103"
+                className="rounded-md border border-[#008000] px-7 py-3 font-bold text-[#008000] transition hover:bg-[#008000] hover:text-white"
               >
                 문의하기
               </a>
@@ -305,59 +305,6 @@ export default function Home() {
           >
             010-5232-3103
           </a>
-        </div>
-      </section>
-
-      {/* Contact */}
-      <section id="contact" className="px-6 py-24">
-        <div className="mx-auto max-w-7xl">
-          <div className="grid gap-12 md:grid-cols-2">
-            <div>
-              <p className="text-sm font-bold uppercase tracking-[0.3em] text-[#008000]">
-                Contact
-              </p>
-              <h2 className="mt-4 text-4xl font-black">문의하기</h2>
-              <p className="mt-5 leading-7 text-gray-600">
-                제품 문의, 공급 상담, 기술 자료 요청은 아래 연락처로 문의해 주세요.
-              </p>
-            </div>
-
-            <div className="rounded-2xl bg-[#f7f7f7] p-8">
-              <div className="space-y-5">
-                <div>
-                  <p className="font-bold">회사명</p>
-                  <p className="mt-1 text-gray-600">(주)엔팜</p>
-                </div>
-
-                <div>
-                  <p className="font-bold">주소</p>
-                  <p className="mt-1 text-gray-600">
-                    경기도 평택시 청북읍 청북중앙로 315-5
-                  </p>
-                </div>
-
-                <div>
-                  <p className="font-bold">대표전화</p>
-                  <p className="mt-1 text-gray-600">031-683-2051</p>
-                </div>
-
-                <div>
-                  <p className="font-bold">팩스</p>
-                  <p className="mt-1 text-gray-600">031-683-2053</p>
-                </div>
-
-                <div>
-                  <p className="font-bold">제품문의</p>
-                  <p className="mt-1 text-gray-600">010-5232-3103</p>
-                </div>
-
-                <div>
-                  <p className="font-bold">E-mail</p>
-                  <p className="mt-1 text-gray-600">nfarm3103@naver.com</p>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
