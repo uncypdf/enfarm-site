@@ -196,7 +196,7 @@ export default function TechnologyPage() {
               <p className="text-gray-700">
                 모돈에겐 초유면역 강화를, 
                 이유자돈에겐 신속한 중화 항체 형성을 통해
-                생산성 개선에 기여합니다.
+                STOP2P를 실현합니다.
               </p>
             </div>
           </div>
