@@ -149,7 +149,7 @@ export default function TechnologyPage() {
               </h3>
 
               <p className="text-gray-700">
-                단백질 흡수 중인 회장 소화율(SID)을 향상시켜
+                단백질 흡수 기준인 회장 소화율(SID)을 향상시켜
                 증체와 면역을 극대화합니다.
               </p>
             </div>
