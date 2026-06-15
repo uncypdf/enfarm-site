@@ -215,7 +215,7 @@ export default function Home() {
 
       {/* STOP 2P */}
       <section className="bg-[#f7faf7] px-6 py-24">
-        <div className="mx-auto grid max-w-7xl items-center gap-12 md:grid-cols-2">
+        <div className="mx-auto max-w-4xl text-center">
           <div>
             <p className="text-sm font-bold uppercase tracking-[0.3em] text-[#008000]">
               STOP 2P PROGRAM
@@ -227,7 +227,7 @@ export default function Home() {
               통합 면역 프로그램
             </h2>
 
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+            <p className="mt-6 mx-auto max-w-3xl text-lg leading-8 text-gray-600">
               STOP 2P 프로그램은 모돈용 아미노에프와 자돈용 코디팜을 기반으로
               PED와 PRRS로 인한 생산성 저하를 최소화하기 위한 엔팜의 현장 맞춤형 면역 솔루션입니다.
             </p>
@@ -238,16 +238,6 @@ export default function Home() {
             >
               관련 제품 보기 →
             </Link>
-          </div>
-
-          <div className="overflow-hidden rounded-3xl bg-white shadow-lg">
-            <Image
-              src="/stop2p-program.png"
-              alt="STOP 2P Program"
-              width={1200}
-              height={800}
-              className="w-full"
-            />
           </div>
         </div>
       </section>
@@ -355,10 +345,10 @@ export default function Home() {
           </div>
 
           <a
-            href="tel:010-5232-3103"
-            className="rounded-md bg-white px-8 py-4 font-black text-[#008000]"
+            href="/branches"
+            className="rounded-md bg-white px-8 py-4 font-black text-[#008000] transition hover:bg-[#f3f4f6]"
           >
-            010-5232-3103
+            문의하기
           </a>
         </div>
       </section>
