@@ -63,6 +63,18 @@ export default function Home() {
               (주)엔팜
             </p>
 
+            <div className="mb-6 flex flex-wrap gap-3">
+              <span className="rounded-full bg-[#eaf6ea] px-4 py-2 text-sm font-bold text-[#008000]">
+                20+ Years Experience
+              </span>
+              <span className="rounded-full bg-[#eaf6ea] px-4 py-2 text-sm font-bold text-[#008000]">
+                H-LMP Patent Technology
+              </span>
+              <span className="rounded-full bg-[#eaf6ea] px-4 py-2 text-sm font-bold text-[#008000]">
+                STOP 2P Program
+              </span>
+            </div>
+
             <h1 className="text-5xl font-black leading-tight tracking-tight md:text-7xl">
               면역이
               <br />
@@ -94,7 +106,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="relative h-[520px] overflow-hidden rounded-3xl shadow-2xl">
+          <div className="relative aspect-video overflow-hidden rounded-3xl shadow-2xl">
             <video
               className="h-full w-full object-cover"
               autoPlay
@@ -117,9 +129,11 @@ export default function Home() {
                 About ENFARM
               </p>
               <h2 className="mt-4 text-4xl font-black leading-tight">
-                축산 현장의 문제를
+                면역이 방역입니다.
                 <br />
-                소재와 영양으로 해결합니다.
+                PED·PRRS 예방을 위한
+                <br />
+                H-LMP 저분자 단백질 솔루션
               </h2>
             </div>
 
@@ -195,6 +209,45 @@ export default function Home() {
             >
               기술 자세히 보기 →
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* STOP 2P */}
+      <section className="bg-[#f7faf7] px-6 py-24">
+        <div className="mx-auto grid max-w-7xl items-center gap-12 md:grid-cols-2">
+          <div>
+            <p className="text-sm font-bold uppercase tracking-[0.3em] text-[#008000]">
+              STOP 2P PROGRAM
+            </p>
+
+            <h2 className="mt-4 text-4xl font-black">
+              PED · PRRS 예방을 위한
+              <br />
+              통합 면역 프로그램
+            </h2>
+
+            <p className="mt-6 text-lg leading-8 text-gray-600">
+              STOP 2P 프로그램은 모돈용 아미노에프와 자돈용 코디팜을 기반으로
+              PED와 PRRS로 인한 생산성 저하를 최소화하기 위한 엔팜의 현장 맞춤형 면역 솔루션입니다.
+            </p>
+
+            <Link
+              href="/products"
+              className="mt-8 inline-block rounded-md bg-[#008000] px-8 py-3 font-bold text-white hover:bg-[#0f3d2e]"
+            >
+              관련 제품 보기 →
+            </Link>
+          </div>
+
+          <div className="overflow-hidden rounded-3xl bg-white shadow-lg">
+            <Image
+              src="/stop2p-program.png"
+              alt="STOP 2P Program"
+              width={1200}
+              height={800}
+              className="w-full"
+            />
           </div>
         </div>
       </section>
