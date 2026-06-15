@@ -184,7 +184,7 @@ export default function TechnologyPage() {
 
               <p className="text-gray-700">
                 이유 후 모체 이행항체 감소 대응과
-                후천성 중화항체 형성을 지원합니다.
+                후천성 면역을 위한 중화항체 형성을 지원합니다.
               </p>
             </div>
 
