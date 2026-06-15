@@ -160,6 +160,23 @@ export default function ContactPage() {
                 />
               </label>
 
+              <label className="block rounded-2xl bg-[#f7faf7] p-5">
+                <span className="mb-2 block font-semibold text-gray-700">
+                  스팸 방지 확인
+                </span>
+                <p className="mb-3 text-sm text-gray-600">
+                  숫자 79를 입력해주세요.
+                </p>
+                <input
+                  name="captcha"
+                  type="text"
+                  required
+                  pattern="79"
+                  className="w-full rounded-xl border border-gray-300 px-4 py-3 outline-none transition focus:border-[#008000]"
+                  placeholder="79 입력"
+                />
+              </label>
+
               <button
                 type="submit"
                 className="w-full rounded-xl bg-[#0f3d2e] px-6 py-4 font-black text-white transition hover:bg-[#14533f]"
