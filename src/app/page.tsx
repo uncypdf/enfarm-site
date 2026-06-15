@@ -1,38 +1,43 @@
 import Image from "next/image";
+import Link from "next/link";
+
 const products = [
   {
-    title: "아미노 에프",
-    subtitle: "H-LMP 핵철함유 저분자단백질",
-    desc: "면역항체 형성의 필수 원료로 PED·PRRS 예방과 초기 회복 관리를 지원합니다.",
+    title: "아미노에프",
+    image: "/pd1.png",
+    desc: "H-LMP 저분자 단백질 기반 면역 증진 솔루션",
+    target: "면역력 강화 및 질병 예방",
   },
   {
     title: "코디팜",
-    subtitle: "천연 미네랄 함유 H-LMP",
-    desc: "모돈의 무유증 및 유사산 예방, 번식성적 개선을 위한 기능성 솔루션입니다.",
+    image: "/pd2.png",
+    desc: "천연 미네랄과 영양소를 함유한 맞춤형 사료첨가제",
+    target: "생산성 향상 및 번식 성적 개선",
   },
   {
     title: "에그밀",
-    subtitle: "100% 통계란 건조분말",
-    desc: "높은 기호성과 영양가를 바탕으로 증체와 골격 형성을 지원합니다.",
+    image: "/pd3.png",
+    desc: "100% 통계란 건조분말로 기호성 및 영양 강화",
+    target: "증체 및 골격 형성 지원",
   },
 ];
 
-const business = [
+const solutions = [
   {
-    title: "H-LMP 핵철함유 저분자단백질",
-    desc: "면역항체 형성의 필수 원료\nPED/PRRS 예방, 조기회복",
+    title: "H-LMP 저분자 단백질",
+    desc: "고분자 단백질을 저분자 펩타이드로 분해하여 면역 활성화 및 흡수율을 극대화합니다.",
   },
   {
-    title: "천연 미네랄함유 H-LMP",
-    desc: "모돈의 무유증 및 유사산 예방\n번식성적 개선",
+    title: "STOP 2P Program",
+    desc: "악취 저감과 환경 개선을 위한 전용 사료 및 발효 솔루션을 제공합니다.",
   },
   {
-    title: "사료/첨가제",
-    desc: "STOP 2P 전용사료 공급\n악취감소 전용 발효사료 공급",
+    title: "모돈·자돈 맞춤 적용",
+    desc: "사육 단계별 맞춤형 솔루션으로 건강한 돼지 육성을 지원합니다.",
   },
   {
-    title: "에그밀",
-    desc: "100% 통계란 건조분말\n높은 기호성과 영양, 가격 만족",
+    title: "분석·실증 기반 솔루션",
+    desc: "과학적 분석과 현장 실증을 통해 신뢰할 수 있는 제품과 서비스를 제공합니다.",
   },
 ];
 
@@ -56,7 +61,7 @@ export default function Home() {
             </h1>
 
             <p className="mt-8 text-xl font-semibold leading-8 text-gray-700">
-              건강한 돼지가 가장 강력한 방역입니다.
+              H-LMP 저분자 단백질 기술 기반의 축산 면역 솔루션으로 PED·PRRS 예방과 생산성 향상을 지원합니다.
             </p>
 
             <p className="mt-5 max-w-xl leading-7 text-gray-600">
@@ -121,37 +126,64 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Business */}
+      {/* Solutions */}
       <section id="business" className="bg-[#f7f7f7] px-6 py-24">
         <div className="mx-auto max-w-7xl">
           <div className="text-center">
             <p className="text-sm font-bold uppercase tracking-[0.3em] text-[#008000]">
-              Business
+              Solutions
             </p>
             <h2 className="mt-4 text-4xl font-black">
-              엔팜 주요 사업영역
+              엔팜 주요 솔루션
             </h2>
             <p className="mt-5 text-gray-600">
-              면역과 생산성을 위한 축산 바이오 솔루션
+              축산 면역과 생산성 향상을 위한 차별화된 기술과 서비스
             </p>
           </div>
 
           <div className="mt-16 grid gap-8 md:grid-cols-4">
-            {business.map((item, index) => (
-              <div key={item.title} className="text-center">
-                <div className="mx-auto flex h-44 w-44 items-center justify-center rounded-full border-2 border-dashed border-gray-300 bg-white text-sm text-gray-400">
-                  이미지 {index + 1}
+            {solutions.map((item, index) => (
+              <div key={item.title} className="rounded-2xl bg-white p-8 shadow-md">
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-[#0f3d2e] text-xl font-black text-white">
+                  {index + 1}
                 </div>
-
-                <h3 className="mt-8 text-xl font-black leading-snug">
+                <h3 className="mb-3 text-xl font-black text-[#008000]">
                   {item.title}
                 </h3>
-
-                <p className="mt-5 whitespace-pre-line text-lg font-medium leading-8 text-gray-700">
-                  {item.desc}
-                </p>
+                <p className="text-gray-700">{item.desc}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Technology */}
+      <section className="px-6 py-24">
+        <div className="mx-auto max-w-7xl grid gap-12 md:grid-cols-2 items-center">
+          <div className="relative h-[360px] rounded-3xl overflow-hidden shadow-lg">
+            <Image
+              src="/h-lmp-process.png"
+              alt="H-LMP Process"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
+          <div>
+            <h2 className="text-4xl font-black text-[#008000]">
+              고분자 단백질을 저분자 펩타이드로
+            </h2>
+            <p className="mt-6 text-lg text-gray-700 leading-relaxed">
+              엔팜의 H-LMP 기술은 고분자 단백질을 저분자 펩타이드로 분해하여
+              돼지의 소화와 흡수를 극대화합니다. 이를 통해 면역 기능을 강화하고
+              생산성을 향상시키는 혁신적인 축산 바이오 솔루션을 제공합니다.
+            </p>
+            <Link
+              href="/technology"
+              className="mt-8 inline-block rounded-md bg-[#008000] px-8 py-3 font-bold text-white hover:bg-[#0f3d2e]"
+            >
+              기술 자세히 보기 →
+            </Link>
           </div>
         </div>
       </section>
@@ -172,29 +204,76 @@ export default function Home() {
                 key={product.title}
                 className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm"
               >
-                <div className="flex h-64 items-center justify-center bg-[#f2f2f2] text-gray-400">
-                  제품 이미지
+                <div className="relative h-64 w-full">
+                  <Image
+                    src={product.image}
+                    alt={product.title}
+                    fill
+                    className="object-cover"
+                    priority
+                  />
                 </div>
 
                 <div className="p-8">
-                  <p className="text-sm font-bold text-[#008000]">
-                    {product.subtitle}
-                  </p>
-                  <h3 className="mt-3 text-3xl font-black">
+                  <h3 className="mt-3 text-3xl font-black text-[#008000]">
                     {product.title}
                   </h3>
-                  <p className="mt-5 leading-7 text-gray-600">
+                  <p className="mt-3 text-lg font-semibold text-gray-700">
                     {product.desc}
                   </p>
-                  <a
-                    href="#contact"
+                  <p className="mt-1 text-gray-600">{product.target}</p>
+                  <Link
+                    href="/products"
                     className="mt-8 inline-block font-bold text-[#008000]"
                   >
-                    제품 문의 →
-                  </a>
+                    제품 자세히 보기 →
+                  </Link>
                 </div>
               </article>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Analysis */}
+      <section className="bg-[#f7f7f7] px-6 py-24">
+        <div className="mx-auto max-w-7xl">
+          <div className="grid gap-12 md:grid-cols-2 items-center">
+            <div>
+              <p className="text-sm font-bold uppercase tracking-[0.3em] text-[#008000]">
+                Analysis
+              </p>
+              <h2 className="mt-4 text-4xl font-black">
+                분석자료와 농장 실증으로 확인하는 H-LMP
+              </h2>
+              <p className="mt-6 text-lg text-gray-700 leading-relaxed">
+                엔팜의 H-LMP 제품은 과학적 분석과 현장 실증을 통해 그 효과와 안전성을 입증받았습니다.
+                다양한 분석 자료와 농장 사례를 통해 신뢰할 수 있는 솔루션을 제공합니다.
+              </p>
+              <Link
+                href="/analysis"
+                className="mt-8 inline-block rounded-md bg-[#008000] px-8 py-3 font-bold text-white hover:bg-[#0f3d2e]"
+              >
+                분석자료 보기 →
+              </Link>
+            </div>
+            <div className="grid grid-cols-2 gap-6">
+              {[
+                "면역물질(혈청) 분석",
+                "분자량 분석",
+                "아미노산 분석",
+                "SID 비교분석",
+                "농장 실증사례",
+                "에그밀 성분분석",
+              ].map((item) => (
+                <div
+                  key={item}
+                  className="rounded-2xl bg-white p-6 shadow-md flex items-center justify-center text-center font-semibold text-[#008000]"
+                >
+                  {item}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -207,11 +286,8 @@ export default function Home() {
               Product Inquiry
             </p>
             <h2 className="mt-3 text-4xl font-black">
-              제품 상담이 필요하신가요?
+              농장 상황, 사육단계, 질병 이력에 따라 적합한 제품과 적용 방법을 안내해드립니다.
             </h2>
-            <p className="mt-5 text-white/80">
-              제품 적용 목적과 농장 상황에 맞는 솔루션을 안내해드립니다.
-            </p>
           </div>
 
           <a
