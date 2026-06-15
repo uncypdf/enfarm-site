@@ -82,12 +82,13 @@ export default function Home() {
             </h1>
 
             <p className="mt-8 text-xl font-semibold leading-8 text-gray-700">
-              H-LMP 저분자 단백질 기술 기반의 축산 면역 솔루션으로 PED·PRRS 예방과 생산성 향상을 지원합니다.
+              STOP 2P(PED·PRRS) 예방과 치료를 위한 신속하고 지속성있는 면역항체 형성.
+              펩타이드형 저분자 단백질 솔루션, 코디팜!)
             </p>
 
             <p className="mt-5 max-w-xl leading-7 text-gray-600">
               엔팜은 기능성 바이오 소재와 단백질 원료 솔루션을 통해
-              축산 생산성 향상에 기여합니다.
+              축산 생산성 향상과 STOP 2P를 실천합니다.
             </p>
 
             <div className="mt-10 flex gap-4">
