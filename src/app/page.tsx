@@ -94,13 +94,13 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="relative h-[420px] overflow-hidden rounded-3xl">
-            <Image
-              src="/main1.png"
-              alt="엔팜 메인 이미지"
-              fill
-              priority
-              className="object-cover"
+          <div className="relative h-[420px] overflow-hidden rounded-3xl shadow-xl">
+            <iframe
+              className="h-full w-full"
+              src="https://www.youtube.com/embed/7SihCz149xA?autoplay=1&mute=1&loop=1&playlist=7SihCz149xA&controls=0&rel=0"
+              title="ENFARM Video"
+              allow="autoplay; encrypted-media; picture-in-picture"
+              allowFullScreen
             />
           </div>
         </div>
