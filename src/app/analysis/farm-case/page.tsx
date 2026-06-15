@@ -41,7 +41,7 @@ export default function FarmCasePage() {
 
           <div className="overflow-hidden rounded-3xl border bg-white">
             <Image
-              src="/e6.jpeg"
+              src="/e6.png"
               alt="PED 예방 및 회복사례"
               width={1600}
               height={900}
