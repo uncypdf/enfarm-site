@@ -56,7 +56,7 @@ export default function Home() {
      
 
       {/* Main Visual */}
-      <section className="relative overflow-hidden bg-[#f5f7f2]">
+      <section className="relative overflow-hidden bg-gradient-to-b from-[#f5f7f2] to-white">
         <div className="mx-auto grid max-w-7xl items-center gap-10 px-6 py-24 md:grid-cols-2 md:py-32">
           <div>
             <p className="mb-5 text-lg font-bold text-[#008000]">
@@ -75,7 +75,7 @@ export default function Home() {
               </span>
             </div>
 
-            <h1 className="text-5xl font-black leading-tight tracking-tight md:text-7xl">
+            <h1 className="text-5xl font-black leading-[0.95] tracking-tight md:text-7xl">
               면역이
               <br />
               방역이다!
@@ -184,13 +184,13 @@ export default function Home() {
 
       {/* Technology */}
       <section className="px-6 py-24">
-        <div className="mx-auto max-w-7xl grid gap-12 md:grid-cols-2 items-center">
-          <div className="relative h-[360px] rounded-3xl overflow-hidden shadow-lg">
+        <div className="mx-auto max-w-7xl grid gap-12 md:grid-cols-[1.3fr_0.7fr] items-center">
+          <div className="relative aspect-[16/9] rounded-3xl overflow-hidden bg-white shadow-lg">
             <Image
               src="/h-lmp-process.png"
               alt="H-LMP Process"
               fill
-              className="object-cover"
+              className="object-contain p-4"
               priority
             />
           </div>
@@ -256,7 +256,7 @@ export default function Home() {
             {products.map((product) => (
               <article
                 key={product.title}
-                className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm"
+                className="overflow-hidden rounded-3xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
               >
                 <div className="relative h-80 w-full bg-gradient-to-b from-[#fafafa] to-[#f1f5f1]">
                   <Image
@@ -316,7 +316,7 @@ export default function Home() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="rounded-2xl bg-white p-6 text-center font-semibold text-[#008000] shadow-md transition hover:-translate-y-1 hover:shadow-xl"
+                  className="rounded-2xl bg-white p-6 text-center font-semibold text-[#008000] shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
                 >
                   <div className="mx-auto mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-[#eef7ee] font-black text-[#0f3d2e]">
                     {index + 1}
@@ -336,7 +336,7 @@ export default function Home() {
             <p className="text-lg font-bold text-white/80">
               Product Inquiry
             </p>
-            <h2 className="mt-3 text-4xl font-black">
+            <h2 className="mt-3 text-4xl font-black md:text-5xl">
               제품 상담이 필요하신가요?
             </h2>
             <p className="mt-5 max-w-2xl text-lg leading-8 text-white/75">
@@ -346,7 +346,7 @@ export default function Home() {
 
           <a
             href="/branches"
-            className="rounded-md bg-white px-8 py-4 font-black text-[#008000] transition hover:bg-[#f3f4f6]"
+            className="rounded-md bg-white px-10 py-4 font-black text-[#008000] shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-[#f3f4f6]"
           >
             문의하기
           </a>
