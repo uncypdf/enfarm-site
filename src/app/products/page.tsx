@@ -50,7 +50,7 @@ export default function ProductsPage() {
           </h2>
           <p className="mx-auto mt-8 max-w-4xl text-xl leading-9 text-gray-700">
             엔팜은 H-LMP 저분자 단백질 기술을 기반으로 PED·PRRS 예방과
-            생산성 향상을 위한 기능성 사료 원료와 축산 솔루션을 제공합니다.
+            생산성 향상을 위한 기능성 사료와 원료로 STOP 2P 축산 솔루션을 제공합니다.
           </p>
         </section>
 

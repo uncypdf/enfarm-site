@@ -145,45 +145,46 @@ export default function TechnologyPage() {
 
             <div className="rounded-2xl border p-8">
               <h3 className="mb-4 text-xl font-bold">
-                높은 흡수율
+                높은 회장 흡수율
               </h3>
 
               <p className="text-gray-700">
-                회장 소화율(SID)을 향상시켜
-                영양 이용성을 극대화합니다.
+                단백질 흡수 중인 회장 소화율(SID)을 향상시켜
+                증체와 면역을 극대화합니다.
               </p>
             </div>
 
             <div className="rounded-2xl border p-8">
               <h3 className="mb-4 text-xl font-bold">
-                면역항체 형성
+                면역기능 항체(중화항체) 강화
               </h3>
 
               <p className="text-gray-700">
                 필수 아미노산과 이온화된 햄철을
-                동시에 공급하여 면역항체 형성을 지원합니다.
+                동시에 공급하여 모돈의 빈혈 예방과 
+                자돈의 조혈 기능을 강화합니다.
               </p>
             </div>
 
             <div className="rounded-2xl border p-8">
               <h3 className="mb-4 text-xl font-bold">
-                모체 이행항체 강화
+                모체 이행항체 강화로 PED 예방
               </h3>
 
               <p className="text-gray-700">
-                초유 공급과 무유증 예방을 통해
+                무유증 예방과 풍부한 초유 공급을 통해
                 모체 이행항체 지속성을 강화합니다.
               </p>
             </div>
 
             <div className="rounded-2xl border p-8">
               <h3 className="mb-4 text-xl font-bold">
-                PRRS 항체 공백기 대응
+                이유 전 후 PRRS 항체 공백기 대응
               </h3>
 
               <p className="text-gray-700">
-                이유 후 모체 이행항체 유지와
-                후천성 면역항체 형성을 지원합니다.
+                이유 후 모체 이행항체 감소 대응과
+                후천성 중화항체 형성을 지원합니다.
               </p>
             </div>
 
@@ -193,7 +194,8 @@ export default function TechnologyPage() {
               </h3>
 
               <p className="text-gray-700">
-                초기 면역 강화 및 회복력 향상을 통해
+                모돈에겐 초유면역 강화를, 
+                이유자돈에겐 신속한 중화 항체 형성을 통해
                 생산성 개선에 기여합니다.
               </p>
             </div>
@@ -213,7 +215,15 @@ export default function TechnologyPage() {
 
           <div className="mt-12 grid gap-6 md:grid-cols-5">
             <div className="rounded-xl bg-white/10 p-6 text-center">
+              모돈의 1차 ABP 예방
+            </div>
+
+            <div className="rounded-xl bg-white/10 p-6 text-center">
               PED 예방
+            </div>
+
+            <div className="rounded-xl bg-white/10 p-6 text-center">
+              이유자돈의 2차 ABP 예방
             </div>
 
             <div className="rounded-xl bg-white/10 p-6 text-center">
@@ -221,15 +231,7 @@ export default function TechnologyPage() {
             </div>
 
             <div className="rounded-xl bg-white/10 p-6 text-center">
-              모체항체 강화
-            </div>
-
-            <div className="rounded-xl bg-white/10 p-6 text-center">
-              초기면역 강화
-            </div>
-
-            <div className="rounded-xl bg-white/10 p-6 text-center">
-              생산성 향상
+              STOP 2P 실현
             </div>
           </div>
         </section>
