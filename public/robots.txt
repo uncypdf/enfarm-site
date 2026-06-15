@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://enfarm.co.kr/sitemap.xml
