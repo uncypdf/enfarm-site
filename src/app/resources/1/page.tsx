@@ -37,11 +37,11 @@ export default function ResourceDetailPage() {
             <div className="rounded-3xl bg-[#f7faf7] p-8">
               <h3 className="text-2xl font-black text-[#0f3d2e]">첨부파일</h3>
               <p className="mt-3 text-gray-600">
-                PDF를 public/resources 폴더에 업로드한 뒤 링크만 수정하면 됩니다.
+                H-LMP STOP 2P 솔루션 B2B 제품소개서
               </p>
 
               <a
-                href="/resources/stop2p-solution.pdf"
+                href="/H-LMP STOP 2P 솔루션 b2b(케이피드).pdf"
                 download
                 className="mt-6 inline-block rounded-xl bg-[#0f3d2e] px-6 py-3 font-bold text-white transition hover:bg-[#14533f]"
               >
