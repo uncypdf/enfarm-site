@@ -56,7 +56,7 @@ export default function ProductsPage() {
 
         <section className="mb-32">
           <h2 className="mb-12 text-4xl font-black text-gray-900">
-            주요 제품군
+            주요 제품군(사료 첨가제)
           </h2>
 
           <div
