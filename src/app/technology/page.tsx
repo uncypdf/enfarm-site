@@ -235,6 +235,18 @@ export default function TechnologyPage() {
               STOP 2P 실현
             </div>
           </div>
+          <div className="mt-12 rounded-2xl border border-white/20 bg-white/5 p-8">
+            <h3 className="text-2xl font-bold">*ABP란?</h3>
+
+            <p className="mt-4 text-lg text-gray-300">
+              Antibody Black Point
+            </p>
+
+            <ul className="mt-6 space-y-3 text-gray-300">
+              <li>- 분만 전·후 모돈 1차 ABP : PED 위험</li>
+              <li>- 이유 직후 자돈 2차 ABP : PRRS 위험</li>
+            </ul>
+          </div>
         </section>
       </div>
     </main>
