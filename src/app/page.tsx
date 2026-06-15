@@ -82,8 +82,8 @@ export default function Home() {
             </h1>
 
             <p className="mt-8 text-xl font-semibold leading-8 text-gray-700">
-              STOP 2P(PED·PRRS) 예방과 치료를 위한 신속하고 지속성있는 면역항체 형성.
-              펩타이드형 저분자 단백질 솔루션, 코디팜!)
+              STOP 2P(PED·PRRS) 예방과 치료를 위한 신속하고 지속성있는 면역항체 형성 - 
+              펩타이드형 저분자 단백질 솔루션, 코디팜!
             </p>
 
             <p className="mt-5 max-w-xl leading-7 text-gray-600">

@@ -3,20 +3,52 @@ import Image from "next/image";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "(주)엔팜 | 면역이 방역이다!",
+  metadataBase: new URL("https://enfarm.co.kr"),
+  title: {
+    default: "(주)엔팜 | 면역이 방역이다!",
+    template: "%s | (주)엔팜",
+  },
   description:
-    "H-LMP 저분자 단백질, 기능성 사료 및 축산 바이오 솔루션 전문기업",
+    "H-LMP 저분자 단백질 기반의 축산 바이오 솔루션 기업. PED·PRRS 예방을 위한 아미노에프, 코디팜, 에그밀 및 STOP 2P 프로그램을 제공합니다.",
   keywords: [
     "엔팜",
+    "ENFARM",
     "H-LMP",
-    "저분자단백질",
+    "저분자 단백질",
     "양돈",
     "축산",
     "사료첨가제",
+    "아미노에프",
+    "코디팜",
     "에그밀",
     "PRRS",
     "PED",
+    "STOP 2P",
   ],
+  openGraph: {
+    title: "(주)엔팜 | 면역이 방역이다!",
+    description:
+      "H-LMP 저분자 단백질 기반 축산 바이오 솔루션 전문기업",
+    url: "https://enfarm.co.kr",
+    siteName: "ENFARM",
+    locale: "ko_KR",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "ENFARM",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "(주)엔팜 | 면역이 방역이다!",
+    description:
+      "H-LMP 저분자 단백질 기반 축산 바이오 솔루션 전문기업",
+    images: ["/og-image.png"],
+  },
   icons: {
     icon: "/favicon.png",
   },
@@ -65,7 +97,7 @@ export default function RootLayout({
               </a>
 
               <a href="/branches" className="hover:text-[#008000]">
-                지사 및 대리점
+                문의하기
               </a>
             </nav>
           </div>
