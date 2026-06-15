@@ -133,7 +133,7 @@ export default function TechnologyPage() {
           <div className="mt-16 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             <div className="rounded-2xl border p-8">
               <h3 className="mb-4 text-xl font-bold">
-                저분자 단백질
+                저분자 단백질 생산 기술
               </h3>
 
               <p className="text-gray-700">
