@@ -41,6 +41,15 @@ const solutions = [
   },
 ];
 
+const analysisLinks = [
+  { title: "면역물질(혈청) 분석", href: "/analysis/serum" },
+  { title: "분자량 분석", href: "/analysis/molecular-weight" },
+  { title: "아미노산 분석", href: "/analysis/amino-acid" },
+  { title: "SID 비교분석", href: "/analysis/sid" },
+  { title: "농장 실증사례", href: "/analysis/farm-case" },
+  { title: "에그밀 성분분석", href: "/analysis/eggmeal" },
+];
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-white text-[#111827]">
@@ -204,12 +213,12 @@ export default function Home() {
                 key={product.title}
                 className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm"
               >
-                <div className="relative h-64 w-full">
+                <div className="relative h-80 w-full bg-gradient-to-b from-[#fafafa] to-[#f1f5f1]">
                   <Image
                     src={product.image}
                     alt={product.title}
                     fill
-                    className="object-cover"
+                    className="object-contain p-6"
                     priority
                   />
                 </div>
@@ -258,20 +267,17 @@ export default function Home() {
               </Link>
             </div>
             <div className="grid grid-cols-2 gap-6">
-              {[
-                "면역물질(혈청) 분석",
-                "분자량 분석",
-                "아미노산 분석",
-                "SID 비교분석",
-                "농장 실증사례",
-                "에그밀 성분분석",
-              ].map((item) => (
-                <div
-                  key={item}
-                  className="rounded-2xl bg-white p-6 shadow-md flex items-center justify-center text-center font-semibold text-[#008000]"
+              {analysisLinks.map((item, index) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="rounded-2xl bg-white p-6 text-center font-semibold text-[#008000] shadow-md transition hover:-translate-y-1 hover:shadow-xl"
                 >
-                  {item}
-                </div>
+                  <div className="mx-auto mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-[#eef7ee] font-black text-[#0f3d2e]">
+                    {index + 1}
+                  </div>
+                  {item.title}
+                </Link>
               ))}
             </div>
           </div>
@@ -279,15 +285,18 @@ export default function Home() {
       </section>
 
       {/* Inquiry */}
-      <section className="bg-[#008000] px-6 py-20 text-white">
+      <section className="bg-[#0f3d2e] px-6 py-20 text-white">
         <div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-8 md:flex-row md:items-center">
           <div>
             <p className="text-lg font-bold text-white/80">
               Product Inquiry
             </p>
             <h2 className="mt-3 text-4xl font-black">
-              농장 상황, 사육단계, 질병 이력에 따라 적합한 제품과 적용 방법을 안내해드립니다.
+              제품 상담이 필요하신가요?
             </h2>
+            <p className="mt-5 max-w-2xl text-lg leading-8 text-white/75">
+              농장 상황, 사육단계, 질병 이력에 따라 적합한 제품과 적용 방법을 안내해드립니다.
+            </p>
           </div>
 
           <a
