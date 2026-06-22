@@ -359,15 +359,6 @@ export default function AminoFPage() {
               </div>
             </div>
 
-            <div className="mt-10 overflow-hidden rounded-3xl border border-gray-200 bg-white shadow-sm">
-              <Image
-                src="/stop2p-mechanism.png"
-                alt="STOP 2P Mechanism"
-                width={1600}
-                height={900}
-                className="h-auto w-full"
-              />
-            </div>
 
             <div className="mt-8 grid gap-6 lg:grid-cols-2">
               <div className="rounded-3xl border border-[#dbeafe] bg-[#f8fbff] p-8">
