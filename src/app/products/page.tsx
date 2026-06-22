@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const products = [
   {
@@ -8,6 +9,7 @@ const products = [
     desc: "임신돈·포유돈의 면역과 초유 품질 관리를 위한 기능성 제품",
     points: ["무유증 예방 지원", "초유 공급 강화", "모체 이행항체 유지"],
     tagline: "모돈 면역 및 초유 품질 관리 솔루션",
+    href: "/products/amino-f",
   },
   {
     name: "코디팜",
@@ -16,6 +18,7 @@ const products = [
     desc: "자돈의 초기 면역력과 성장 회복을 위한 기능성 제품",
     points: ["PED·PRRS 예방 지원", "이유 후 성장 관리", "초기 회복력 강화"],
     tagline: "자돈 초기 면역력 및 성장 관리 솔루션",
+    href: "/products",
   },
   {
     name: "에그밀",
@@ -24,6 +27,7 @@ const products = [
     desc: "양돈, 양계, 양어, 반려동물용 기능성 단백질 원료",
     points: ["H-LMP 기반 단백질 원료", "다축종 적용 가능", "사료 원료용 공급"],
     tagline: "H-LMP 기반 기능성 단백질 원료",
+    href: "/products",
   },
 ];
 
@@ -99,9 +103,12 @@ export default function ProductsPage() {
                     ))}
                   </ul>
                   <div className="mt-auto border-t pt-6">
-                    <button className="w-full rounded-xl bg-[#0f3d2e] px-5 py-3 font-semibold text-white transition hover:bg-[#14533f]">
+                    <Link
+                      href={product.href}
+                      className="block w-full rounded-xl bg-[#0f3d2e] px-5 py-3 text-center font-semibold text-white transition hover:bg-[#14533f]"
+                    >
                       제품 자세히 보기
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </article>
