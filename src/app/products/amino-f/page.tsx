@@ -270,6 +270,170 @@ export default function AminoFPage() {
         </div>
       </section>
 
+      <section className="bg-white px-6 py-24">
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-12">
+            <p className="text-sm font-black uppercase tracking-[0.3em] text-[#0b55b7]">
+              STOP 2P Mechanism
+            </p>
+            <h2 className="mt-4 text-4xl font-black leading-tight text-gray-950 md:text-5xl">
+              STOP 2P 프로그램으로
+              <br />
+              이유 후 면역 공백을 최소화합니다
+            </h2>
+            <p className="mt-5 max-w-4xl text-lg leading-8 text-gray-600">
+              선천면역 유지와 후천면역 항체 생성을 빠르게 유도하여 이유 후 질병 리스크를 줄이고 생산성 향상을 지원합니다.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-gray-200 bg-white p-6 shadow-xl md:p-10">
+            <div className="grid gap-4 md:grid-cols-3">
+              <div className="rounded-2xl bg-[#eef5ff] p-5">
+                <p className="text-sm font-bold text-[#0b55b7]">선천적 면역</p>
+                <h3 className="mt-2 text-xl font-black text-gray-900">
+                  모체이행 항체 유지
+                </h3>
+                <p className="mt-2 text-sm leading-6 text-gray-600">
+                  이유 후 급감하는 모체이행항체 유지 기간을 관리.
+                </p>
+              </div>
+
+              <div className="rounded-2xl bg-[#fff5e8] p-5">
+                <p className="text-sm font-bold text-[#f97316]">2차 ABP 구간</p>
+                <h3 className="mt-2 text-xl font-black text-gray-900">
+                  초기면역 항체 형성 필요기간
+                </h3>
+                <p className="mt-2 text-sm leading-6 text-gray-600">
+                  코디팜 급여로 2차 ABP 극복을 지원.
+                </p>
+              </div>
+
+              <div className="rounded-2xl bg-[#edf7ef] p-5">
+                <p className="text-sm font-bold text-[#008000]">후천적 면역</p>
+                <h3 className="mt-2 text-xl font-black text-gray-900">
+                  백신·감염 후 항체 강화
+                </h3>
+                <p className="mt-2 text-sm leading-6 text-gray-600">
+                  후천면역 항체 생성 및 강화 기간을 안정적으로 연결.
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-10 overflow-hidden rounded-3xl border border-gray-200 bg-white shadow-sm">
+              <Image
+                src="/stop2p-mechanism.png"
+                alt="STOP 2P Mechanism"
+                width={1600}
+                height={900}
+                className="h-auto w-full"
+              />
+            </div>
+
+            <div className="mt-8 grid gap-6 lg:grid-cols-2">
+              <div className="rounded-3xl border border-[#dbeafe] bg-[#f8fbff] p-8">
+                <p className="text-sm font-bold text-gray-500">
+                  7년간 국내 양돈농장 자료 요약
+                </p>
+                <h3 className="mt-2 text-2xl font-black text-[#0b55b7]">
+                  A.B.P와 생산성 지표
+                </h3>
+
+                <div className="mt-6 space-y-4">
+                  <div className="rounded-2xl bg-white p-5 shadow-sm">
+                    <div className="flex items-center gap-4">
+                      <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[#0b55b7] text-xl font-black text-white">
+                        1st
+                      </div>
+                      <div>
+                        <p className="text-2xl font-black text-[#0b55b7]">A.B.P : PED &gt;&gt; PSY</p>
+                        <p className="mt-1 text-gray-600">분만 전·후 1차 ABP 관리 구간</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="rounded-2xl bg-white p-5 shadow-sm">
+                    <div className="flex items-center gap-4">
+                      <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[#f97316] text-xl font-black text-white">
+                        2nd
+                      </div>
+                      <div>
+                        <p className="text-2xl font-black text-[#f97316]">A.B.P : PRRS &gt;&gt; MSY</p>
+                        <p className="mt-1 text-gray-600">이유 후 2차 ABP 관리 구간</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <p className="mt-5 rounded-2xl bg-[#edf5ff] p-4 text-sm font-bold text-[#0b55b7]">
+                  1차 ABP를 안정적으로 넘겨야 2차 ABP 극복 기반이 형성됨.
+                </p>
+              </div>
+
+              <div className="rounded-3xl border border-[#e9d5ff] bg-[#fbf7ff] p-8">
+                <p className="text-sm font-bold text-gray-500">PRRS Immune Response</p>
+                <h3 className="mt-2 text-2xl font-black text-[#6d28d9]">
+                  PRRSV의 약하고 지연된 면역반응
+                </h3>
+
+                <div className="mt-6 rounded-2xl bg-white p-6 shadow-sm">
+                  <p className="text-lg font-black text-gray-900">
+                    감염 후 3~4주 후에 방어면역이 형성
+                  </p>
+                  <ul className="mt-4 space-y-2 text-gray-600">
+                    <li>- 초기 면역항체 형성 지연 시 이유 후 피해 심화</li>
+                    <li>- 빠른 선제적 방어 항체 형성이 핵심</li>
+                  </ul>
+
+                  <div className="mt-6 grid gap-3 sm:grid-cols-3">
+                    <div className="rounded-xl bg-[#ede9fe] px-4 py-3 text-center text-sm font-bold text-[#6d28d9]">
+                      ELISA 항체
+                    </div>
+                    <div className="rounded-xl bg-[#dcfce7] px-4 py-3 text-center text-sm font-bold text-[#15803d]">
+                      중화항체
+                    </div>
+                    <div className="rounded-xl bg-[#dbeafe] px-4 py-3 text-center text-sm font-bold text-[#0b55b7]">
+                      혈중 바이러스
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-8 rounded-3xl border border-[#fed7aa] bg-[#fff7ed] p-8">
+              <h3 className="text-center text-2xl font-black text-gray-950">
+                STOP 2P 프로그램의 핵심 포인트
+              </h3>
+
+              <div className="mt-8 grid gap-5 md:grid-cols-3">
+                <div className="rounded-2xl bg-white p-6 shadow-sm">
+                  <p className="text-xl font-black text-[#0b55b7]">선천면역 유지 & 강화</p>
+                  <p className="mt-3 leading-7 text-gray-600">
+                    Amino-F로 H-LMP를 보충하여 모체이행항체 유지 기간 연장.
+                  </p>
+                </div>
+
+                <div className="rounded-2xl bg-white p-6 shadow-sm">
+                  <p className="text-xl font-black text-[#f97316]">초기면역 빠른 형성</p>
+                  <p className="mt-3 leading-7 text-gray-600">
+                    Codifarm으로 2차 ABP 극복과 초기면역 항체 형성 가속화.
+                  </p>
+                </div>
+
+                <div className="rounded-2xl bg-white p-6 shadow-sm">
+                  <p className="text-xl font-black text-[#15803d]">생산성 향상</p>
+                  <p className="mt-3 leading-7 text-gray-600">
+                    이유 후 폐사율 감소와 MSY 개선을 목표로 적용.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <p className="mt-6 text-sm text-gray-500">
+              ※ 1st A.B.P(PED/PSY) 관리에는 Amino-F를, 2nd A.B.P(PRRS/MSY) 극복에는 Codifarm을 추천합니다.
+            </p>
+          </div>
+        </div>
+      </section>
       <section className="mx-auto max-w-7xl px-6 py-20">
         <div className="rounded-3xl bg-[#0f3d2e] px-10 py-14 text-white">
           <p className="text-sm font-bold uppercase tracking-[0.3em] text-white/60">
