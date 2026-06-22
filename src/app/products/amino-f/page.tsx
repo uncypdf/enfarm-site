@@ -1,5 +1,3 @@
-
-
 import Image from "next/image";
 import Link from "next/link";
 
@@ -164,6 +162,40 @@ export default function AminoFPage() {
                 10kDa 이하 저분자화<br />빠른 흡수 및 이용
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white px-6 py-20">
+        <div className="mx-auto max-w-7xl grid gap-8 lg:grid-cols-2">
+          <div className="rounded-3xl border border-gray-200 bg-[#f7faf7] p-8 shadow-sm">
+            <p className="text-sm font-bold uppercase tracking-[0.3em] text-[#008000]">
+              Recommended Farms
+            </p>
+            <h2 className="mt-4 text-4xl font-black text-[#0f3d2e]">
+              이런 농장에 추천합니다
+            </h2>
+
+            <ul className="mt-8 space-y-4 text-lg leading-8 text-gray-700">
+              <li>- PED, PRRS를 예방하고자 하는 농가</li>
+              <li>- 초기 폐사율이 높은 농가</li>
+              <li>- 모돈의 수익성을 개선하고 싶은 농가</li>
+            </ul>
+          </div>
+
+          <div className="rounded-3xl border border-gray-200 bg-white p-8 shadow-sm">
+            <p className="text-sm font-bold uppercase tracking-[0.3em] text-[#008000]">
+              Field Issues
+            </p>
+            <h2 className="mt-4 text-4xl font-black text-[#0f3d2e]">
+              현장에서 자주 발생하는 문제
+            </h2>
+
+            <ul className="mt-8 space-y-4 text-lg leading-8 text-gray-700">
+              <li>- 모돈 사료섭취 감소, 체중 감소, 무유증</li>
+              <li>- 모돈 유질 저하로 인한 자돈 설사병</li>
+              <li>- 자돈의 면역 항체 감소</li>
+            </ul>
           </div>
         </div>
       </section>
