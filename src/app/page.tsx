@@ -7,18 +7,21 @@ const products = [
     image: "/pd1.png",
     desc: "H-LMP 저분자 단백질 기반 면역 증진 솔루션",
     target: "면역력 강화 및 질병 예방",
+    href: "/products/amino-f",
   },
   {
     title: "코디팜",
     image: "/pd2.png",
     desc: "천연 미네랄과 영양소를 함유한 맞춤형 사료첨가제",
     target: "생산성 향상 및 번식 성적 개선",
+    href: "/products",
   },
   {
     title: "에그밀",
     image: "/pd3.png",
     desc: "100% 통계란 건조분말로 기호성 및 영양 강화",
     target: "증체 및 골격 형성 지원",
+    href: "/products",
   },
 ];
 
@@ -278,7 +281,7 @@ export default function Home() {
                   </p>
                   <p className="mt-1 text-gray-600">{product.target}</p>
                   <Link
-                    href="/products"
+                    href={product.href}
                     className="mt-8 inline-block font-bold text-[#008000]"
                   >
                     제품 자세히 보기 →
