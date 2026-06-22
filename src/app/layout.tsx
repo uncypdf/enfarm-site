@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -61,6 +62,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
+      <head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-YE65M0GKQ9"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-YE65M0GKQ9');
+          `}
+        </Script>
+      </head>
       <body className="bg-white text-gray-900">
         {/* Header */}
         <header className="sticky top-0 z-50 border-b bg-white">
