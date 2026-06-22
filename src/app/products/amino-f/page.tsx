@@ -115,7 +115,7 @@ export default function AminoFPage() {
             H-LMP 저분자 단백질 솔루션
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            아미노에프는 100kDa 이상의 혈장과 혈구 유래 고분자 단백질을
+            아미노에프는 100kDa 이상의 햄철 함유 고분자 단백질을
             10kDa 이하의 저분자 펩타이드 및 아미노산화(H-LMP) 형태로 효소분해하여
             체내 흡수력 강화를 목표로 한 모돈용 H-LMP 단백질 솔루션입니다.
           </p>
@@ -158,7 +158,7 @@ export default function AminoFPage() {
               핵심기능
             </h2>
             <p className="mx-auto mt-6 max-w-4xl text-lg leading-8 text-gray-600">
-              100kDa 이상의 혈장과 혈구의 고분자 단백질을 10kDa 이하의 저분자 펩타이드 및
+              100kDa 이상의 햄철 함유 고분자 단백질을 10kDa 이하의 저분자 펩타이드 및
               아미노산화(H-LMP) 형태로 효소분해하여 체내흡수력을 강화.
             </p>
           </div>
@@ -172,7 +172,7 @@ export default function AminoFPage() {
                 고분자 단백질
               </h3>
               <p className="mt-4 leading-7 text-gray-600">
-                혈장·혈구 유래 단백질<br />100kDa 이상
+                햄철 함유 고분자 단백질<br />100kDa 이상
               </p>
             </div>
 
@@ -214,9 +214,12 @@ export default function AminoFPage() {
             </h2>
 
             <ul className="mt-8 space-y-4 text-lg leading-8 text-gray-700">
-              <li>- PED, PRRS를 예방하고자 하는 농가</li>
-              <li>- 초기 폐사율이 높은 농가</li>
-              <li>- 모돈의 수익성을 개선하고 싶은 농가</li>
+              <li>- PED, PRRS 예방 및 감염 후 빠른 회복이 필요한 농장</li>
+              <li>- 분만자돈의 초기 폐사율이 높거나 이유 후 위축과 폐사율이 높은 농장</li>
+              <li>- 고능력 모돈의 잠재능력 실현으로 PSY, MSY 개선이 필요한 농장</li>
+              <li>- 백신의 효과가 기대치 이하인 농장</li>
+              <li>- 2~3년 주기로 PED/PRRS의 피해가 반복되는 농장</li>
+              <li>- 모돈의 경제수명이 6산차 이하의 모돈군이 30% 이하인 농장</li>
             </ul>
           </div>
 
@@ -308,94 +311,6 @@ export default function AminoFPage() {
       </section>
 
       <section className="bg-white px-6 py-24">
-      <section className="bg-[#f7faf7] px-6 py-24">
-        <div className="mx-auto max-w-7xl">
-          <div className="mb-12">
-            <p className="text-sm font-black uppercase tracking-[0.3em] text-[#0b55b7]">
-              Usage Guide
-            </p>
-            <h2 className="mt-4 text-4xl font-black text-[#0f3d2e] md:text-5xl">
-              사용 방법
-            </h2>
-            <p className="mt-5 text-lg leading-8 text-gray-600">
-              Amino-F와 Codifarm의 권장 급여 방법은 아래와 같습니다.
-            </p>
-          </div>
-
-          <div className="overflow-hidden rounded-[28px] border border-gray-200 bg-white shadow-xl">
-            <div className="hidden grid-cols-[1.1fr_0.9fr_1.8fr] bg-[#0b55b7] text-white md:grid">
-              <div className="px-8 py-5 text-2xl font-black">급여대상/시기</div>
-              <div className="border-l border-white/20 px-8 py-5 text-2xl font-black">제품</div>
-              <div className="border-l border-white/20 px-8 py-5 text-2xl font-black">내용</div>
-            </div>
-
-            <div className="divide-y divide-gray-200">
-              {usageRows.map((row) => (
-                <div
-                  key={row.target}
-                  className="grid gap-0 md:grid-cols-[1.1fr_0.9fr_1.8fr]"
-                >
-                  <div className="border-b border-gray-200 bg-[#f6f9ff] px-6 py-6 md:border-b-0 md:px-8 md:py-8">
-                    <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#0b55b7] md:hidden">
-                      급여대상/시기
-                    </p>
-                    <p className="mt-2 text-3xl font-black text-[#0f3d2e] md:mt-0">
-                      {row.target}
-                    </p>
-                  </div>
-
-                  <div className="border-b border-gray-200 px-6 py-6 md:border-b-0 md:border-l md:px-8 md:py-8">
-                    <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#0b55b7] md:hidden">
-                      제품
-                    </p>
-                    {Array.isArray(row.product) ? (
-                      <div className="mt-2 flex flex-col gap-3 md:mt-0">
-                        {row.product.map((item) => (
-                          <span
-                            key={item}
-                            className="inline-flex w-fit rounded-full bg-[#eef5ff] px-4 py-2 text-lg font-black text-[#0b55b7]"
-                          >
-                            {item}
-                          </span>
-                        ))}
-                      </div>
-                    ) : (
-                      <div className="mt-2 md:mt-0">
-                        <span className="inline-flex rounded-full bg-[#eef5ff] px-4 py-2 text-lg font-black text-[#0b55b7]">
-                          {row.product}
-                        </span>
-                      </div>
-                    )}
-                  </div>
-
-                  <div className="px-6 py-6 md:border-l md:px-8 md:py-8">
-                    <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#0b55b7] md:hidden">
-                      내용
-                    </p>
-                    <ul className="mt-2 space-y-3 md:mt-0">
-                      {row.content.map((line, index) => {
-                        const isSub = line.startsWith("(");
-                        return (
-                          <li
-                            key={`${row.target}-${index}`}
-                            className={isSub ? "pl-6 text-lg leading-8 text-gray-500" : "text-2xl font-semibold leading-9 text-gray-900"}
-                          >
-                            {isSub ? line : `• ${line}`}
-                          </li>
-                        );
-                      })}
-                    </ul>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="mt-6 rounded-2xl border border-[#dbeafe] bg-[#f6f9ff] px-6 py-5 text-base leading-7 text-gray-600 md:px-8">
-            <span className="font-black text-[#0b55b7]">※ 안내</span> 상기 급여량은 일반적인 권장량이며, 농장 환경 및 질병 상황에 따라 수의사와 상담 후 조절해 주세요.
-          </div>
-        </div>
-      </section>
         <div className="mx-auto max-w-7xl">
           <div className="mb-12">
             <p className="text-sm font-black uppercase tracking-[0.3em] text-[#0b55b7]">
@@ -571,6 +486,94 @@ export default function AminoFPage() {
             아미노에프는 분만 전·후 모돈의 1차 ABP 관리에 적용되어 포유자돈의 초기 면역 형성과
             PED 예방 프로그램의 기반 제품으로 활용됨.
           </p>
+        </div>
+      </section>
+      <section className="bg-[#f7faf7] px-6 py-24">
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-12">
+            <p className="text-sm font-black uppercase tracking-[0.3em] text-[#0b55b7]">
+              Usage Guide
+            </p>
+            <h2 className="mt-4 text-4xl font-black text-[#0f3d2e] md:text-5xl">
+              사용 방법
+            </h2>
+            <p className="mt-5 text-lg leading-8 text-gray-600">
+              Amino-F와 Codifarm의 권장 급여 방법은 아래와 같습니다.
+            </p>
+          </div>
+
+          <div className="overflow-hidden rounded-[28px] border border-gray-200 bg-white shadow-xl">
+            <div className="hidden grid-cols-[1.1fr_0.9fr_1.8fr] bg-[#0b55b7] text-white md:grid">
+              <div className="px-8 py-5 text-2xl font-black">급여대상/시기</div>
+              <div className="border-l border-white/20 px-8 py-5 text-2xl font-black">제품</div>
+              <div className="border-l border-white/20 px-8 py-5 text-2xl font-black">내용</div>
+            </div>
+
+            <div className="divide-y divide-gray-200">
+              {usageRows.map((row) => (
+                <div
+                  key={row.target}
+                  className="grid gap-0 md:grid-cols-[1.1fr_0.9fr_1.8fr]"
+                >
+                  <div className="border-b border-gray-200 bg-[#f6f9ff] px-6 py-6 md:border-b-0 md:px-8 md:py-8">
+                    <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#0b55b7] md:hidden">
+                      급여대상/시기
+                    </p>
+                    <p className="mt-2 text-3xl font-black text-[#0f3d2e] md:mt-0">
+                      {row.target}
+                    </p>
+                  </div>
+
+                  <div className="border-b border-gray-200 px-6 py-6 md:border-b-0 md:border-l md:px-8 md:py-8">
+                    <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#0b55b7] md:hidden">
+                      제품
+                    </p>
+                    {Array.isArray(row.product) ? (
+                      <div className="mt-2 flex flex-col gap-3 md:mt-0">
+                        {row.product.map((item) => (
+                          <span
+                            key={item}
+                            className="inline-flex w-fit rounded-full bg-[#eef5ff] px-4 py-2 text-lg font-black text-[#0b55b7]"
+                          >
+                            {item}
+                          </span>
+                        ))}
+                      </div>
+                    ) : (
+                      <div className="mt-2 md:mt-0">
+                        <span className="inline-flex rounded-full bg-[#eef5ff] px-4 py-2 text-lg font-black text-[#0b55b7]">
+                          {row.product}
+                        </span>
+                      </div>
+                    )}
+                  </div>
+
+                  <div className="px-6 py-6 md:border-l md:px-8 md:py-8">
+                    <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#0b55b7] md:hidden">
+                      내용
+                    </p>
+                    <ul className="mt-2 space-y-3 md:mt-0">
+                      {row.content.map((line, index) => {
+                        const isSub = line.startsWith("(");
+                        return (
+                          <li
+                            key={`${row.target}-${index}`}
+                            className={isSub ? "pl-6 text-lg leading-8 text-gray-500" : "text-2xl font-semibold leading-9 text-gray-900"}
+                          >
+                            {isSub ? line : `• ${line}`}
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="mt-6 rounded-2xl border border-[#dbeafe] bg-[#f6f9ff] px-6 py-5 text-base leading-7 text-gray-600 md:px-8">
+            <span className="font-black text-[#0b55b7]">※ 안내</span> 상기 급여량은 일반적인 권장량이며, 농장 환경 및 질병 상황에 따라 수의사와 상담 후 조절해 주세요.
+          </div>
         </div>
       </section>
     </main>
