@@ -168,7 +168,7 @@ export default function TechnologyPage() {
 
             <div className="rounded-2xl border p-8">
               <h3 className="mb-4 text-xl font-bold">
-                모체 이행항체 강화로 PED 예방
+                모체 이행항체 강화로 PED/PRRS 예방
               </h3>
 
               <p className="text-gray-700">
