@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://enfarm.co.kr</loc>
+    <loc>https://enfarm.co.kr/</loc>
   </url>
   <url>
     <loc>https://enfarm.co.kr/about</loc>
@@ -11,6 +11,15 @@
   </url>
   <url>
     <loc>https://enfarm.co.kr/products</loc>
+  </url>
+  <url>
+    <loc>https://enfarm.co.kr/products/amino-f</loc>
+  </url>
+  <url>
+    <loc>https://enfarm.co.kr/products/codifarm</loc>
+  </url>
+  <url>
+    <loc>https://enfarm.co.kr/products/eggmeal</loc>
   </url>
   <url>
     <loc>https://enfarm.co.kr/analysis</loc>
