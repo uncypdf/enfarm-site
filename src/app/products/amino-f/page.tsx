@@ -148,6 +148,20 @@ export default function AminoFPage() {
         </div>
       </section>
 
+      <section className="bg-white px-6 pt-20 pb-6">
+        <div className="mx-auto max-w-7xl">
+          <div className="overflow-hidden rounded-3xl border border-gray-200 bg-white shadow-sm">
+            <Image
+              src="/1stabp.png"
+              alt="1차 ABP 핵심 포인트 도표"
+              width={1600}
+              height={1000}
+              className="h-auto w-full"
+            />
+          </div>
+        </div>
+      </section>
+
       <section className="border-y bg-white px-6 py-20">
         <div className="mx-auto max-w-7xl">
           <div className="mb-12 text-center">
