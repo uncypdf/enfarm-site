@@ -26,8 +26,9 @@ export default function SerumAnalysisPage() {
             면역효과 IN VIVO TEST
           </h2>
           <p className="mt-6 max-w-4xl text-lg leading-8 text-gray-700">
-            코디팜 급여 후 이유자돈의 혈액 및 혈청 내 면역 관련 지표 변화를
-            분석하여 RBC, WBC 및 IgG, IgM, IgA 변화 추이를 확인했습니다.
+            코디팜 급여 후 이유자돈의 혈액 및 혈청 내 면역 관련 지표 물질인
+            RBC, WBC, IgG, IgM, IgA 들의 변화 추이 분석 결과
+            (분석기관: 시의과대학)
           </p>
         </div>
 
@@ -103,7 +104,8 @@ export default function SerumAnalysisPage() {
         <section className="rounded-3xl bg-[#0f3d2e] px-10 py-14 text-white">
           <h3 className="text-3xl font-black">분석 결과 요약</h3>
           <p className="mt-6 text-lg leading-8 text-gray-300">
-            적혈구와 백혈구 세포의 혈중변화와 혈청 내 IgG, IgM, IgA의 농도변화를 분석한 결과, 코디팜은 질병감염 초기에 효과적인 면역항체 형성을 나타내므로 이유전후부터 육성 초기단계의 바이러스성 질병예방에 효과를 보이고 있다.
+            적혈구와 백혈구 세포의 혈중변화와 혈청 내 IgG, IgM, IgA의 농도변화를 분석한 결과, 
+            코디팜은 질병감염 초기에 효과적인 면역항체 형성을 나타내므로 이유전후부터 육성 초기단계의 바이러스성 질병예방에 효과를 보이고 있다.
           </p>
         </section>
       </section>
