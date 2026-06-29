@@ -90,8 +90,8 @@ export default function Home() {
             </p>
 
             <p className="mt-5 max-w-xl leading-7 text-gray-600">
-              엔팜은 기능성 바이오 소재와 단백질 원료 솔루션을 통해
-              축산 생산성 향상과 STOP 2P를 실천합니다.
+              엔팜은 기능성 면역 단백질 소재 개발과 공급으로 
+              농장 면역강화를 통한 생산성 향상과 STOP 2P를 실천합니다.
             </p>
 
             <div className="mt-10 flex gap-4">
