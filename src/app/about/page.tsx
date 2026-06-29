@@ -62,7 +62,7 @@ export default function AboutPage() {
               </p>
 
               <p>
-                국내·외의 축산업은 PED, PRRS, ASF, AI 등 다양한
+                국내 · 외의 축산업은 PED, PRRS, ASF, AI 등 다양한
                 바이러스성 질병으로 인해 생산성과 수익성에 큰 영향을 받고
                 있습니다.
               </p>
@@ -153,7 +153,7 @@ export default function AboutPage() {
                   <li>• 면역항체 원료용 저분자 단백질 개발</li>
                   <li>• STOP 2P Promotion / Consulting</li>
                   <li>• PED · PRRS 예방 사료 및 첨가제 개발 공급</li>
-                  <li>• 저분자 발효단백질 활용 악취저감 사료 개발</li>
+                  <li>• 저분자 발효단백질 활용 악취저감 면역 강화 사료 개발</li>
                 </ul>
               </div>
 
@@ -163,14 +163,14 @@ export default function AboutPage() {
                 </h4>
 
                 <p className="mt-3 text-xl font-semibold">
-                  면역사료용 저분자 단백질 개발
+                  면역사료 원료용 저분자 단백질 개발
                 </p>
 
                 <ul className="mt-6 space-y-3 text-gray-700">
                   <li>• 품질 안정화 및 대량생산 시스템 구축</li>
                   <li>• 단백질 분해 및 발효기술 확보</li>
-                  <li>• PED 예방 및 회복강화 제품 개발</li>
-                  <li>• STOP 2P 프로그램(H/W · S/W) 개발</li>
+                  <li>• PED 예방 및 회복강화 제품 개발 및 농장임상시험 완성</li>
+                  <li>• STOP 2P 사양 관리 프로그램 완성</li>
                 </ul>
               </div>
 
@@ -180,13 +180,13 @@ export default function AboutPage() {
                 </h4>
 
                 <p className="mt-3 text-xl font-semibold">
-                  면역원료 개발
+                  면역 단백질 원료 연구
                 </p>
 
                 <ul className="mt-6 space-y-3 text-gray-700">
                   <li>• 국내산 단백질 자원 및 원료 개발</li>
-                  <li>• 사료용 · 비료용 제품 개발 및 등록</li>
-                  <li>• 가축 혈액 자원화 시스템 구축</li>
+                  <li>• 사료용 · 비료용 제품 개발 및 특허 등록</li>
+                  <li>• 햄철 함유 동물성 단백질 자원화 시스템 구축</li>
                 </ul>
               </div>
             </div>
