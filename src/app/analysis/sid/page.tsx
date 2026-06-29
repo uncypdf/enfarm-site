@@ -6,10 +6,10 @@ export default function SidAnalysisPage() {
       <section className="bg-[#0f3d2e] py-24 text-white">
         <div className="mx-auto max-w-7xl px-6">
           <h1 className="text-5xl font-black">
-            H-LMP 특성 및 SID 비교분석
+            H-LMP(코디팜) 특성 및 SID 비교분석
           </h1>
           <p className="mt-4 text-lg text-gray-300">
-            H-LMP Characteristics & SID Comparison
+            H-LMP Characteristics & SID(Standardized Ileal Digestible) Comparison
           </p>
         </div>
       </section>
@@ -42,13 +42,13 @@ export default function SidAnalysisPage() {
 
         <section className="mb-24">
           <h3 className="mb-8 text-3xl font-black text-gray-900">
-            1. 아미노햄(H-LMP) 유사 제품 비교 및 차별성
+            1. 코디팜(H-LMP)과 유사 제품(수입 혈장단백)) 비교 및 차별성
           </h3>
 
           <div className="overflow-hidden rounded-3xl border bg-white">
             <Image
               src="/sid1.png"
-              alt="아미노햄 유사 제품 비교"
+              alt="코디팜 유사 제품 비교"
               width={1600}
               height={900}
               className="w-full"
@@ -120,34 +120,7 @@ export default function SidAnalysisPage() {
           </div>
         </section>
 
-        <section className="rounded-3xl bg-[#0f3d2e] px-10 py-14 text-white">
-          <h3 className="text-3xl font-black">
-            결과 해석
-          </h3>
-
-          <p className="mt-6 text-lg leading-8 text-gray-300">
-            분자량이 SID에 영향을 주는 요인.
-          </p>
-
-          <ul className="mt-6 space-y-4 text-lg leading-8 text-gray-300">
-            <li>
-              - 소화 효소 접근성: 저분자 단백질은 효소가 쉽게 결합하여 분해 가능
-            </li>
-            <li>
-              - 구조적 복잡성: 고분자 단백질은 3차/4차 구조로 인해 효소 접근이 어려움
-            </li>
-            <li>
-              - 응집 가능성: 고분자 단백질은 열이나 pH 변화에 따라 응집되어 소화율 저하
-            </li>
-            <li>
-              - 가공 처리 여부: 가수분해나 열처리를 통해 고분자 단백질도 SID를 높일 수 있음
-            </li>
-          </ul>
-
-          <p className="mt-8 text-sm leading-7 text-gray-400">
-            자료 출처: 한국식품과학회지(Korean journal of food science and technology, v.30 no.4, 1998년, pp.988~991) / (주)제노마인 아미노햄 구성단백질농도측정(2024.12)
-          </p>
-        </section>
+               </section>
       </section>
     </main>
   );
