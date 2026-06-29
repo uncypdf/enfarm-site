@@ -53,13 +53,13 @@ export default function TechnologyPage() {
 
           <div className="mt-10 space-y-6 text-lg leading-9 text-gray-700">
             <p>
-              단백질 분해 촉진 공정에 M/W 조사를 적용하여
+              단백질 분해 촉진 공정에 특허 기술을 적용하여
               효소 침투력과 분해 반응을 극대화합니다.
             </p>
 
             <p>
               햄철함유 고분자 단백질의 폴리펩타이드 결합을
-              햄철함유 저분자 단백질(H-LMP)로 전환하여
+              저분자 단백질(H-LMP)로 전환하여
               회장 소화율(SID)을 극대화하고
               면역항체 형성과 증체에 필요한 영양 공급 효율을 향상시킵니다.
             </p>
@@ -156,13 +156,13 @@ export default function TechnologyPage() {
 
             <div className="rounded-2xl border p-8">
               <h3 className="mb-4 text-xl font-bold">
-                면역기능 항체(중화항체) 강화
+                면역기능 항체(중화항체) 형성 강화
               </h3>
 
               <p className="text-gray-700">
-                필수 아미노산과 이온화된 햄철을
+                필수 아미노산과 햄철을
                 동시에 공급하여 모돈의 빈혈 예방과 
-                자돈의 조혈 기능을 강화합니다.
+                자돈의 조혈 기능을 향상으로 초유를 통한 자돈의 면역기능을 강화합니다. 
               </p>
             </div>
 
@@ -184,7 +184,7 @@ export default function TechnologyPage() {
 
               <p className="text-gray-700">
                 이유 후 모체 이행항체 감소 대응과
-                후천성 면역을 위한 중화항체 형성을 지원합니다.
+                후천성 면역을 위한 빠른 중화항체 형성을 지원합니다.
               </p>
             </div>
 
@@ -213,27 +213,38 @@ export default function TechnologyPage() {
             엔팜의 모돈과 자돈의 면역 강화 프로그램입니다.
           </p>
 
-          <div className="mt-12 grid gap-6 md:grid-cols-5">
-            <div className="rounded-xl bg-white/10 p-6 text-center">
+          <div className="mt-12 hidden items-center justify-between gap-3 lg:flex">
+            <div className="flex-1 rounded-xl bg-white/10 p-6 text-center font-semibold">
               모돈의 1차 ABP 예방
             </div>
-
-            <div className="rounded-xl bg-white/10 p-6 text-center">
+            <div className="text-5xl font-black text-white/70">→</div>
+            <div className="flex-1 rounded-xl bg-white/10 p-6 text-center font-semibold">
               PED 예방
             </div>
-
-            <div className="rounded-xl bg-white/10 p-6 text-center">
-              이유자돈의 2차 
-              <br></br>ABP 예방
+            <div className="text-5xl font-black text-white/70">→</div>
+            <div className="flex-1 rounded-xl bg-white/10 p-6 text-center font-semibold">
+              이유자돈의 2차<br/>ABP 예방
             </div>
-
-            <div className="rounded-xl bg-white/10 p-6 text-center">
+            <div className="text-5xl font-black text-white/70">→</div>
+            <div className="flex-1 rounded-xl bg-white/10 p-6 text-center font-semibold">
               PRRS 예방
             </div>
-
-            <div className="rounded-xl bg-white/10 p-6 text-center">
+            <div className="text-5xl font-black text-white/70">→</div>
+            <div className="flex-1 rounded-xl bg-white/10 p-6 text-center font-semibold">
               STOP 2P 실현
             </div>
+          </div>
+
+          <div className="mt-12 grid gap-6 lg:hidden">
+            <div className="rounded-xl bg-white/10 p-6 text-center">모돈의 1차 ABP 예방</div>
+            <div className="text-center text-3xl text-white/70">↓</div>
+            <div className="rounded-xl bg-white/10 p-6 text-center">PED 예방</div>
+            <div className="text-center text-3xl text-white/70">↓</div>
+            <div className="rounded-xl bg-white/10 p-6 text-center">이유자돈의 2차 ABP 예방</div>
+            <div className="text-center text-3xl text-white/70">↓</div>
+            <div className="rounded-xl bg-white/10 p-6 text-center">PRRS 예방</div>
+            <div className="text-center text-3xl text-white/70">↓</div>
+            <div className="rounded-xl bg-white/10 p-6 text-center">STOP 2P 실현</div>
           </div>
           <div className="mt-12 rounded-2xl border border-white/20 bg-white/5 p-8">
             <h3 className="text-2xl font-bold">*ABP란?</h3>
@@ -243,8 +254,8 @@ export default function TechnologyPage() {
             </p>
 
             <ul className="mt-6 space-y-3 text-gray-300">
-              <li>- 분만 전·후 모돈 1차 ABP : PED 위험</li>
-              <li>- 이유 직후 자돈 2차 ABP : PRRS 위험</li>
+              <li>- 모돈의 분만 전·후 스트레스 : 1차 ABP (PED 위험)</li>
+              <li>- 자돈의 이유 스트레스 : 2차 ABP (PRRS 위험)</li>
             </ul>
           </div>
         </section>
