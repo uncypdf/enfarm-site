@@ -57,19 +57,19 @@ export default function AboutPage() {
             <div className="mt-12 space-y-8 text-lg leading-9 text-gray-700">
               <p>
                 주식회사 엔팜은 <strong>“자연과 인간은 하나”</strong>라는
-                기업 이념 아래 건강한 친환경 축산을 위한 기능성 단백질 원료와
-                축산 바이오 솔루션을 연구·개발하는 전문기업입니다.
+                기업 이념 아래 건강한 친환경 축산을 위한 기능성 면역 단백질 원료를 
+                연구·개발하는 전문기업입니다.
               </p>
 
               <p>
-                양돈 및 양계 산업은 PED, PRRS, ASF, AI 등 다양한
+                국내·외의 축산업은 PED, PRRS, ASF, AI 등 다양한
                 바이러스성 질병으로 인해 생산성과 수익성에 큰 영향을 받고
                 있습니다.
               </p>
 
               <p>
-                이러한 질병은 단순한 가축의 건강 문제를 넘어
-                농가 경영과 식품 공급 안정성에도 중요한 영향을 미치고 있습니다.
+                이러한 질병은 단순한 가축의 질병과 건강 문제를 넘어
+                농장 경영과 식품 공급 안정성에도 중요한 영향을 미치고 있습니다.
               </p>
 
               <p>
@@ -80,13 +80,13 @@ export default function AboutPage() {
 
               <p>
                 특히 가축의 면역 형성, 회복 및 성장 단계에서 중요한 역할을 하는
-                저분자 단백질 원료와 아미노산 기반 솔루션을 공급하며,
+                저분자 단백질 원료 기반 솔루션을 공급하며,
                 건강한 축산 환경 조성과 생산성 향상에 기여하고 있습니다.
               </p>
 
               <p>
-                엔팜은 앞으로도 과학적 연구와 현장 중심의 기술 개발을 통해
-                지속 가능한 친환경 축산의 미래를 만들어 가겠습니다.
+                엔팜은 앞으로도 가축의 면역 연구와 현장 중심의 기술 개발을 통해
+                질병을 극복하는 친환경 축산의 미래를 만들어 가겠습니다.
               </p>
             </div>
 
@@ -97,7 +97,7 @@ export default function AboutPage() {
                 </h4>
 
                 <p className="text-gray-600">
-                  건강한 축산을 위한 면역 솔루션 제공
+                  STOP 2P 면역 솔루션 제공
                 </p>
               </div>
 
@@ -117,7 +117,7 @@ export default function AboutPage() {
                 </h4>
 
                 <p className="text-gray-600">
-                  기술 · 신뢰 · 현장중심 · 지속가능성
+                  건강한 가축 · 건강한 식품
                 </p>
               </div>
             </div>
@@ -128,7 +128,7 @@ export default function AboutPage() {
               </p>
 
               <h4 className="mt-4 text-4xl font-black">
-                면역이 방역입니다!
+                면역이 방역이다!
               </h4>
             </div>
           </section>
