@@ -143,7 +143,7 @@ export default function ProductsPage() {
 
         <section className="mb-32 rounded-3xl bg-[#f7faf7] p-10">
           <h2 className="text-3xl font-black text-[#0f3d2e]">
-            제품 및 프로그램 적용
+            사육단계별 권장 사용량 및 프로그램 
           </h2>
 
           <div className="mt-10 grid gap-8 md:grid-cols-3">
@@ -151,23 +151,24 @@ export default function ProductsPage() {
               <h3 className="text-xl font-bold">임신돈·모돈</h3>
               <p className="mt-4 leading-7 text-gray-600">
                 아미노에프를 사료 급여량으로 적용하여 모돈의 1차 ABP를 예방하고 
-                면역력이 확보된 초유 공급을 지원합니다.  
+                면역력이 확보된 풍부한 초유를 공급
               </p>
             </div>
 
             <div className="rounded-2xl bg-white p-8">
               <h3 className="text-xl font-bold">포유돈</h3>
               <p className="mt-4 leading-7 text-gray-600">
-                PED 및 PRRS 발생 시 아미노에프와 코디팜을 상황에 따라
-                적용합니다.
+                임신말 급격한 태아성장과 분만스트레스로 
+                사료섭취량 감소와 급격한 체력, 영양손실로 인한 1차 ABP예방(초유의 PED 중화항체 강화) 
               </p>
             </div>
 
             <div className="rounded-2xl bg-white p-8">
               <h3 className="text-xl font-bold">자돈</h3>
               <p className="mt-4 leading-7 text-gray-600">
-                포유기부터 55일령 전후까지 코디팜을 통해 초기 면역과 회복(빠른 중화 항체 형성)을
-                지원합니다.
+                포유기부터 55일령 전후까지 
+                코디팜을 통한 PRRS초기면역 강화 및 
+                조기회복(빠른 중화 항체 형성)을 지원합니다.
               </p>
             </div>
           </div>
