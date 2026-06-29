@@ -58,17 +58,6 @@ export default function ProductsPage() {
           </p>
         </section>
 
-        <section className="mb-32">
-          <div className="overflow-hidden rounded-3xl border border-gray-200 bg-white shadow-sm">
-            <Image
-              src="/pd13.png"
-              alt="제품 및 프로그램 적용 도표"
-              width={1600}
-              height={900}
-              className="h-auto w-full"
-            />
-          </div>
-        </section>
 
         <section className="mb-32">
           <h2 className="mb-12 text-4xl font-black text-gray-900">
@@ -181,6 +170,18 @@ export default function ProductsPage() {
                 지원합니다.
               </p>
             </div>
+          </div>
+        </section>
+
+        <section className="mb-32">
+          <div className="overflow-hidden rounded-3xl border border-gray-200 bg-white shadow-sm">
+            <Image
+              src="/pd13.png"
+              alt="제품 및 프로그램 적용 도표"
+              width={1600}
+              height={900}
+              className="h-auto w-full"
+            />
           </div>
         </section>
 
