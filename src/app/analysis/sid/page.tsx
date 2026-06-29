@@ -42,7 +42,7 @@ export default function SidAnalysisPage() {
 
         <section className="mb-24">
           <h3 className="mb-8 text-3xl font-black text-gray-900">
-            1. 코디팜(H-LMP)과 유사 제품(수입 혈장단백)) 비교 및 차별성
+            1. 코디팜(H-LMP)과 유사 제품(수입 혈장단백) 비교 및 차별성
           </h3>
 
           <div className="overflow-hidden rounded-3xl border bg-white">
