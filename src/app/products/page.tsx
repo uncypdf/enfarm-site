@@ -130,7 +130,7 @@ export default function ProductsPage() {
 
           <div className="overflow-hidden rounded-3xl border bg-white">
             <Image
-              src="/stop2p-program.png"
+              src="/stop2p-program-v2.png"
               alt="아미노에프 코디팜 제품 및 프로그램 설명"
               width={1600}
               height={900}
