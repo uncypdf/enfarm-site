@@ -2,27 +2,27 @@ import Link from "next/link";
 
 const analysisPages = [
   {
-    title: "H-LMP 면역물질(혈청) 분석",
+    title: "H-LMP(코디팜) 면역물질(혈청) 분석",
     href: "/analysis/serum",
     desc: "H-LMP 적용에 따른 혈청 내 면역 관련 물질 분석 자료",
   },
   {
-    title: "H-LMP 아미노햄 분자량 분석",
+    title: "H-LMP(코디팜) 아미노햄 분자량 분석",
     href: "/analysis/molecular-weight",
     desc: "고분자 단백질과 H-LMP 저분자 단백질의 분자량 비교 분석",
   },
   {
-    title: "H-LMP 성분(아미노산) 분석",
+    title: "H-LMP(코디팜) 성분(아미노산) 분석",
     href: "/analysis/amino-acid",
     desc: "H-LMP에 포함된 주요 아미노산 성분 분석 자료",
   },
   {
-    title: "H-LMP 특성 및 SID 비교분석",
+    title: "H-LMP(코디팜) 특성 및 SID 비교분석",
     href: "/analysis/sid",
     desc: "혈장단백 대비 H-LMP의 특성과 SID 비교 자료",
   },
   {
-    title: "H-LMP 농장 실증사례",
+    title: "H-LMP(코디팜/아미노에프) 농장 실증사례",
     href: "/analysis/farm-case",
     desc: "PED·PRRS 농장 적용 사례 및 현장 실증 결과",
   },
@@ -57,7 +57,7 @@ export default function AnalysisPage() {
             H-LMP 분석 자료
           </h2>
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-gray-600">
-            엔팜의 H-LMP 저분자 단백질 기술과 제품의 특성을 확인할 수 있는
+            엔팜의 H-LMP 저분자 단백질 제품의 면역학적 특성을 확인할 수 있는
             분석자료 및 농장 실증 결과입니다.
           </p>
         </div>
