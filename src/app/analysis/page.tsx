@@ -17,7 +17,7 @@ const analysisPages = [
     desc: "H-LMP에 포함된 주요 아미노산 성분 분석 자료",
   },
   {
-    title: "H-LMP(코디팜) 특성 및 SID 비교분석",
+    title: "코디팜(H-LMP) 특성 및 혈장단백(수입)과 비교분석",
     href: "/analysis/sid",
     desc: "혈장단백 대비 H-LMP의 특성과 SID 비교 자료",
   },

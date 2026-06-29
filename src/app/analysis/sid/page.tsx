@@ -6,7 +6,7 @@ export default function SidAnalysisPage() {
       <section className="bg-[#0f3d2e] py-24 text-white">
         <div className="mx-auto max-w-7xl px-6">
           <h1 className="text-5xl font-black">
-            H-LMP(코디팜) 특성 및 SID 비교분석
+            코디팜(H-LMP) 특성 및 혈장단백(수입)과 비교분석
           </h1>
           <p className="mt-4 text-lg text-gray-300">
             H-LMP Characteristics & SID(Standardized Ileal Digestible) Comparison
@@ -16,14 +16,14 @@ export default function SidAnalysisPage() {
 
       <section className="border-b">
         <div className="mx-auto max-w-7xl px-6 py-4 text-sm text-gray-500">
-          HOME &gt; 분석 / 실증 &gt; H-LMP 특성 및 SID 비교분석
+          HOME &gt; 분석 / 실증 &gt; 코디팜(H-LMP) 특성 및 혈장단백(수입)과 비교분석
         </div>
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-20">
         <section className="mb-16">
           <h2 className="text-4xl font-black text-[#0f3d2e]">
-            H-LMP 특성 및 SID 비교분석(유사 제품)
+            코디팜(H-LMP) 특성 및 혈장단백(수입)과 비교분석
           </h2>
 
           <div className="mt-8 rounded-3xl bg-[#f7faf7] p-8">
