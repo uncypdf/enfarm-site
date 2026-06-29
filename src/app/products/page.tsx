@@ -25,8 +25,8 @@ const products = [
     target: "칼슘 + 단백질",
     image: "/pd3.png",
     desc: "100% 통계란 가공품",
-    points: ["순수 계란의 천연칼슘과 단백질 동시 공급 효과", "골격과 증체 만족"],
-    tagline: "H-LMP 기반 기능성 단백질 원료",
+    points: ["순수 계란의 천연칼슘과 단백질 동시 공급 효과", "골격과 증체를 통한 면역기능 강화"],
+    tagline: "칼슘과 단백질 기반 원료",
     href: "/products",
   },
 ];
@@ -53,7 +53,7 @@ export default function ProductsPage() {
             면역이 방역이다
           </h2>
           <p className="mx-auto mt-8 max-w-4xl text-xl leading-9 text-gray-700">
-            엔팜은 H-LMP 저분자 단백질 기술을 기반으로 PED·PRRS 예방과
+            엔팜은 면역항체 형성에 필수 원료인 H-LMP 저분자 단백질 기술을 기반으로 PED·PRRS 예방과
             생산성 향상을 위한 기능성 사료와 원료로 STOP 2P 축산 솔루션을 제공합니다.
           </p>
         </section>
@@ -149,15 +149,15 @@ export default function ProductsPage() {
             <div className="rounded-2xl bg-white p-8">
               <h3 className="text-xl font-bold">임신돈·모돈</h3>
               <p className="mt-4 leading-7 text-gray-600">
-                아미노에프를 사료 톤당 적용하여 모돈의 면역과 초유 공급을
-                지원합니다.
+                아미노에프를 사료 급여량으로 적용하여 모돈의 1차 ABP를 예방하고 
+                면역력이 확보된 초유 공급을 지원합니다.  
               </p>
             </div>
 
             <div className="rounded-2xl bg-white p-8">
               <h3 className="text-xl font-bold">포유돈</h3>
               <p className="mt-4 leading-7 text-gray-600">
-                PED 및 질병 발생 시 아미노에프와 코디팜을 상황에 따라
+                PED 및 PRRS 발생 시 아미노에프와 코디팜을 상황에 따라
                 적용합니다.
               </p>
             </div>
@@ -165,7 +165,7 @@ export default function ProductsPage() {
             <div className="rounded-2xl bg-white p-8">
               <h3 className="text-xl font-bold">자돈</h3>
               <p className="mt-4 leading-7 text-gray-600">
-                포유기부터 55일령 전후까지 코디팜을 통해 초기 면역과 회복을
+                포유기부터 55일령 전후까지 코디팜을 통해 초기 면역과 회복(빠른 중화 항체 형성)을
                 지원합니다.
               </p>
             </div>
