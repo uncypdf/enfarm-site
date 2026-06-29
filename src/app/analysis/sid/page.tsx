@@ -120,7 +120,6 @@ export default function SidAnalysisPage() {
           </div>
         </section>
 
-               </section>
       </section>
     </main>
   );
