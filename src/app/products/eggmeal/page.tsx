@@ -240,16 +240,14 @@ export default function EggmealPage() {
             dark
           />
 
-          <div className="mt-12 grid gap-4 xl:grid-cols-6">
-            {processSteps.map((step, index) => (
-              <ProcessCard key={step.title} number={index + 1} title={step.title} desc={step.desc} />
-            ))}
-          </div>
-
-          <div className="mt-10 grid gap-6 md:grid-cols-3">
-            <QualityCard title="수분 관리" desc="수분 5~6% 이하 기준으로 건조 원료의 안정성을 관리합니다." />
-            <QualityCard title="살모넬라 검사" desc="살모넬라 전수검사와 월 1회 이상 공인기관 검사를 병행합니다." />
-            <QualityCard title="포장 단위" desc="20kg 포장과 1톤백 공급이 가능한 원료형 제품입니다." />
+          <div className="mt-12 overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 p-6">
+            <Image
+              src="/eggmeal1.png"
+              alt="에그밀 생산공정"
+              width={1800}
+              height={1000}
+              className="h-auto w-full rounded-2xl"
+            />
           </div>
         </div>
       </section>
@@ -316,10 +314,10 @@ export default function EggmealPage() {
       <section className="bg-[#0f3d2e] px-6 py-20 text-white">
         <div className="mx-auto max-w-7xl rounded-[2rem] border border-white/10 bg-white/5 p-10 text-center md:p-16">
           <p className="text-sm font-black uppercase tracking-[0.3em] text-white/50">
-            ENFARM EGGMEAL
+            (주)엔팜 에그밀
           </p>
           <h2 className="mt-5 text-4xl font-black md:text-5xl">
-            Eggmeal로 건강한 성장의 기반을 만드세요.
+            에그밀로 건강한 성장의 기반을 만드세요.
           </h2>
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-white/75">
             천연 유기태 칼슘과 기능성 계란 단백질을 동시에 공급하여 모돈과 자돈의 건강한 성장과 생산성 향상을 지원합니다.
@@ -377,27 +375,6 @@ function ValueCard({ title, value, desc }: { title: string; value: string; desc:
       <p className="text-6xl font-black text-[#c49b16]">{value}</p>
       <h3 className="mt-5 text-2xl font-black text-[#0f3d2e]">{title}</h3>
       <p className="mt-4 leading-7 text-gray-600">{desc}</p>
-    </article>
-  );
-}
-
-function ProcessCard({ number, title, desc }: { number: number; title: string; desc: string }) {
-  return (
-    <article className="rounded-3xl border border-white/15 bg-white/10 p-6 text-center">
-      <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-[#f7d76a] font-black text-[#0f3d2e]">
-        {number}
-      </div>
-      <h3 className="mt-5 text-xl font-black text-white">{title}</h3>
-      <p className="mt-3 text-sm leading-6 text-white/65">{desc}</p>
-    </article>
-  );
-}
-
-function QualityCard({ title, desc }: { title: string; desc: string }) {
-  return (
-    <article className="rounded-3xl border border-white/15 bg-white/10 p-7">
-      <h3 className="text-xl font-black text-[#f7d76a]">{title}</h3>
-      <p className="mt-3 leading-7 text-white/70">{desc}</p>
     </article>
   );
 }
