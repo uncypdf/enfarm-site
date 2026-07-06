@@ -22,7 +22,7 @@ const analysisPages = [
     desc: "혈장단백 대비 H-LMP의 특성과 SID 비교 자료",
   },
   {
-    title: "H-LMP(코디팜/아미노에프) 농장 실증사례",
+    title: "코디팜/아미노에프 농장 실증사례",
     href: "/analysis/farm-case",
     desc: "PED·PRRS 농장 적용 사례 및 현장 실증 결과",
   },
