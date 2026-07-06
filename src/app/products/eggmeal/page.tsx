@@ -4,7 +4,7 @@ export default function EggmealPage() {
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="bg-[#0f3d2e] py-24 text-white">
+      <section className="bg-[#0f3d2e] py-24 text-white lg:grid lg:grid-cols-2 lg:items-center">
         <div className="mx-auto max-w-7xl px-6">
           <p className="text-sm font-bold uppercase tracking-[0.3em] text-white/60">
             Product Detail
@@ -16,6 +16,13 @@ export default function EggmealPage() {
           <p className="mt-6 max-w-2xl text-lg text-white/80">
             골격 성장, 증체, 면역 강화에 최적화된 천연 동물성 단백질과 칼슘을 공급합니다.
           </p>
+        </div>
+        <div>
+          <img
+            src="/pd3.png"
+            alt="Eggmeal 제품"
+            className="mx-auto w-full max-w-md drop-shadow-2xl"
+          />
         </div>
       </section>
 
@@ -128,19 +135,19 @@ export default function EggmealPage() {
       <section className="mx-auto max-w-7xl px-6 py-20">
         <h2 className="text-2xl font-bold text-[#0f3d2e] mb-10">생산 공정</h2>
         <div className="flex flex-col items-center">
-          {/* Flow */}
-          <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6">
-            <ProcessBox>연·파란</ProcessBox>
-            <Arrow />
-            <ProcessBox>130℃ 이상 멸균</ProcessBox>
-            <Arrow />
-            <ProcessBox>분쇄</ProcessBox>
-            <Arrow />
-            <ProcessBox>선별</ProcessBox>
-            <Arrow />
-            <ProcessBox>품질검사</ProcessBox>
-            <Arrow />
-            <ProcessBox>출고</ProcessBox>
+          {/* Timeline */}
+          <div className="flex items-center justify-center flex-wrap gap-4 md:gap-6">
+            <TimelineStep title="연·파란" caption="원료 수거" />
+            <TimelineArrow />
+            <TimelineStep title="130℃ 이상 멸균" caption="5시간 이상" />
+            <TimelineArrow />
+            <TimelineStep title="분쇄" caption="균일 입도" />
+            <TimelineArrow />
+            <TimelineStep title="선별" caption="이물 제거" />
+            <TimelineArrow />
+            <TimelineStep title="품질검사" caption="살모넬라 전수" />
+            <TimelineArrow />
+            <TimelineStep title="출고" caption="최종 포장" />
           </div>
           {/* Info box */}
           <div className="mt-8 rounded-2xl bg-[#eafaf1] px-6 py-5 max-w-2xl text-center text-[#0f3d2e] font-medium text-base shadow">
@@ -174,9 +181,53 @@ export default function EggmealPage() {
         </div>
       </section>
 
+      {/* 권장 급여 프로그램 Section */}
+      <section className="mx-auto max-w-7xl px-6 pb-20">
+        <h2 className="text-2xl font-bold text-[#0f3d2e] mb-10">권장 급여 프로그램</h2>
+        <div className="overflow-x-auto">
+          <table className="min-w-full rounded-3xl bg-white shadow-md text-[#0f3d2e]">
+            <thead>
+              <tr className="border-b border-gray-300">
+                <th className="px-6 py-4 text-left font-semibold">대상</th>
+                <th className="px-6 py-4 text-left font-semibold">권장량</th>
+                <th className="px-6 py-4 text-left font-semibold">기대 효과</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="border-b border-gray-200">
+                <td className="px-6 py-4">이유자돈</td>
+                <td className="px-6 py-4">0.5~1%</td>
+                <td className="px-6 py-4">골격 형성 · 면역 강화</td>
+              </tr>
+              <tr className="border-b border-gray-200">
+                <td className="px-6 py-4">육성·비육돈</td>
+                <td className="px-6 py-4">0.5~1%</td>
+                <td className="px-6 py-4">증체 및 출하체중 증가</td>
+              </tr>
+              <tr className="border-b border-gray-200">
+                <td className="px-6 py-4">임신돈</td>
+                <td className="px-6 py-4">0.3~0.5%</td>
+                <td className="px-6 py-4">태아 성장 · 골격 강화</td>
+              </tr>
+              <tr>
+                <td className="px-6 py-4">포유돈</td>
+                <td className="px-6 py-4">0.5%</td>
+                <td className="px-6 py-4">유량 증가 · 면역항체 이행 강화</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="mt-4 max-w-2xl text-blue-700 font-semibold">
+          ※ 권장 급여량은 농장 환경 및 사양관리 조건에 따라 조절 가능합니다.
+        </p>
+      </section>
+
       {/* CTA Section */}
       <section className="bg-[#0f3d2e] py-20">
         <div className="mx-auto max-w-7xl px-6 flex flex-col items-center text-center">
+          <p className="text-xs font-bold uppercase tracking-widest text-white/60 mb-2">
+            ENFARM EGGMEAL
+          </p>
           <h2 className="text-3xl md:text-4xl font-black text-white mb-6">
             Eggmeal로 건강한 성장의 기반을 만드세요.
           </h2>
@@ -207,5 +258,31 @@ function ProcessBox({ children }: { children: React.ReactNode }) {
 function Arrow() {
   return (
     <span className="mx-2 md:mx-1 text-[#0f3d2e] text-2xl select-none">→</span>
+  );
+}
+
+function TimelineStep({ title, caption }: { title: string; caption: string }) {
+  return (
+    <div className="flex flex-col items-center text-center min-w-[100px]">
+      <div className="rounded-3xl bg-white shadow p-6 px-8 font-bold text-[#0f3d2e] text-base">
+        {title}
+      </div>
+      <p className="mt-2 text-sm text-[#0f3d2e]/80">{caption}</p>
+    </div>
+  );
+}
+
+function TimelineArrow() {
+  return (
+    <svg
+      className="mx-2 md:mx-4 text-green-600 w-10 h-10 flex-shrink-0"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={3}
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14M13 6l6 6-6 6" />
+    </svg>
   );
 }
