@@ -41,7 +41,23 @@ export default function EggmealPage() {
 
         <section className="mb-24">
           <h3 className="mb-8 text-3xl font-black text-gray-900">
-            1. 주요성분 및 효능
+            1. 에그밀 제품생산 공정도
+          </h3>
+
+          <div className="overflow-hidden rounded-3xl border bg-white">
+            <Image
+              src="/eggmeal1.png"
+              alt="에그밀 제품생산 공정도"
+              width={1600}
+              height={1200}
+              className="w-full"
+            />
+          </div>
+        </section>
+
+        <section className="mb-24">
+          <h3 className="mb-8 text-3xl font-black text-gray-900">
+            2. 주요성분 및 효능
           </h3>
 
           <div className="overflow-hidden rounded-3xl border bg-white">
@@ -57,7 +73,7 @@ export default function EggmealPage() {
 
         <section className="mb-24">
           <h3 className="mb-8 text-3xl font-black text-gray-900">
-            2. 단미사료 성분등록 및 시험성적서
+            3. 단미사료 성분등록 및 시험성적서
           </h3>
 
           <p className="mb-8 text-lg text-gray-700">
@@ -77,7 +93,7 @@ export default function EggmealPage() {
 
         <section className="mb-24">
           <h3 className="mb-10 text-3xl font-black text-gray-900">
-            분석결과
+            4. 분석결과
           </h3>
 
           <div className="grid gap-8 md:grid-cols-4">
@@ -121,7 +137,7 @@ export default function EggmealPage() {
 
         <section className="rounded-3xl bg-[#0f3d2e] px-10 py-14 text-white">
           <h3 className="text-3xl font-black">
-            결과 해석
+            5. 결과 해석
           </h3>
 
           <p className="mt-6 text-lg leading-8 text-gray-300">
