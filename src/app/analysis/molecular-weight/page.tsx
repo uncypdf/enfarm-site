@@ -102,11 +102,11 @@ export default function MolecularWeightPage() {
 
         <section className="rounded-3xl bg-[#0f3d2e] px-10 py-14 text-white">
           <h3 className="text-3xl font-black">
-            결과 해석
+            결과 분석
           </h3>
 
           <p className="mt-6 text-lg leading-8 text-gray-300">
-            처리구(샘플2)에선 혈장과 적혈구의 고분자 단백질이 저분자 펩타이드 및
+            처리구(샘플2)에선 햄철함유 고분자 단백질이 저분자 펩타이드 및
             아미노산화 되어 실제 검출된 단백질 농도에서도 아미노햄의 고분자
             단백질 농도는 1.96ml(처리전 14.66ml)으로 86.6% 정도 감소,
             15KDa 이하로 저분자화 되어 비 단백질인 햄철의 철분 이미지 외에는
