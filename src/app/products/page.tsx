@@ -36,14 +36,14 @@ export default function ProductsPage() {
     <main className="min-h-screen bg-white">
       <section className="bg-[#0f3d2e] py-24 text-white">
         <div className="mx-auto max-w-7xl px-6">
-          <h1 className="text-5xl font-black">제품소개</h1>
+          <h1 className="text-5xl font-black">제품안내</h1>
           <p className="mt-4 text-lg text-gray-300">ENFARM PRODUCTS</p>
         </div>
       </section>
 
       <section className="border-b">
         <div className="mx-auto max-w-7xl px-6 py-4 text-sm text-gray-500">
-          HOME &gt; 제품소개
+          HOME &gt; 제품안내
         </div>
       </section>
 
@@ -54,7 +54,7 @@ export default function ProductsPage() {
           </h2>
           <p className="mx-auto mt-8 max-w-4xl text-xl leading-9 text-gray-700">
             엔팜은 면역항체 형성에 필수 원료인 H-LMP 저분자 단백질 기술을 기반으로 PED·PRRS 예방과
-            생산성 향상을 위한 기능성 사료와 원료로 STOP 2P 축산 솔루션을 제공합니다.
+            생산성 향상을 위한 기능성 사료와 원료로 STOP 2P 양돈 솔루션을 제공합니다.
           </p>
         </section>
 
