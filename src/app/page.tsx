@@ -14,14 +14,14 @@ const products = [
     image: "/pd2.png",
     desc: "천연 미네랄과 영양소를 함유한 맞춤형 사료첨가제",
     target: "생산성 향상 및 번식 성적 개선",
-    href: "/products",
+    href: "/products/codifarm",
   },
   {
     title: "에그밀",
     image: "/pd3.png",
     desc: "100% 통계란 건조분말로 기호성 및 영양 강화",
     target: "증체 및 골격 형성 지원",
-    href: "/products",
+    href: "/products/eggmeal",
   },
 ];
 
