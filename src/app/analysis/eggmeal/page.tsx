@@ -135,7 +135,7 @@ export default function EggmealPage() {
           </div>
         </section>
 
-        <section className="rounded-3xl bg-[#0f3d2e] px-10 py-14 text-white">
+        <section className="mb-24 rounded-3xl bg-[#0f3d2e] px-10 py-14 text-white">
           <h3 className="text-3xl font-black">
             5. 결과 해석
           </h3>
@@ -154,6 +154,22 @@ export default function EggmealPage() {
             고온 멸균건조 공정을 적용하여 위생안전성을 강화하였으며,
             시험성적서 기준 살모넬라는 검출되지 않음.
           </p>
+        </section>
+
+        <section>
+          <h3 className="mb-8 text-3xl font-black text-gray-900">
+            6. 에그밀 사용 권장량
+          </h3>
+
+          <div className="overflow-hidden rounded-3xl border bg-white">
+            <Image
+              src="/eggmeal6.png"
+              alt="에그밀 사용 권장량"
+              width={1600}
+              height={1200}
+              className="w-full"
+            />
+          </div>
         </section>
       </section>
     </main>
