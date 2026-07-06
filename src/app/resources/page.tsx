@@ -1,16 +1,6 @@
-
-
 import Link from "next/link";
 
 const posts = [
-  {
-    id: 2,
-    title: "PED(돼지 유행성 설사병) 완전 정리",
-    author: "관리자",
-    date: "2026-03-23",
-    views: 2,
-    href: "/resources/2",
-  },
   {
     id: 1,
     title: "H-LMP STOP 2P 솔루션 (아미노에프 · 코디팜)",
