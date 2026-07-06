@@ -246,9 +246,9 @@ export default function AminoFPage() {
             </h2>
 
             <ul className="mt-8 space-y-4 text-lg leading-8 text-gray-700">
-              <li>- 모돈 사료섭취 감소, 체중 감소, 무유증</li>
-              <li>- 모돈 유질 저하로 인한 자돈 설사병</li>
-              <li>- 자돈의 면역 항체 감소</li>
+              <li>- 모돈의 분만전후 사료섭취량 감소로인한 영양손실</li>
+              <li>- 모돈의 무유증과 유질저하로 인한 초유불량으로 면역항체 이행 부족,결핍</li>
+              <li>- 모돈의 백신효과 미흡 및 번식장애로 인한 조기도태</li>
             </ul>
           </div>
         </div>
