@@ -104,7 +104,7 @@ export default function EggmealPage() {
             <div className="mt-10 grid gap-4 sm:grid-cols-3">
               <HeroMetric value="100%" label="통계란분" />
               <HeroMetric value="23%" label="천연 유기태 칼슘" />
-              <HeroMetric value="130℃+" label="고온 멸균" />
+              <HeroMetric value="130℃+" label="고온 멸균/살모넬라균 제로" />
             </div>
           </div>
 
