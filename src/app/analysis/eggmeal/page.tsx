@@ -117,10 +117,10 @@ export default function EggmealPage() {
 
             <div className="rounded-2xl bg-[#f7faf7] p-8">
               <div className="text-4xl font-black text-[#0f3d2e]">
-                62.02%
+                23%
               </div>
               <p className="mt-3 text-gray-600">
-                조회분
+                칼슘
               </p>
             </div>
 
