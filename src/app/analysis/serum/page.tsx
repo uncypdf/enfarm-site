@@ -6,7 +6,7 @@ export default function SerumAnalysisPage() {
       <section className="bg-[#0f3d2e] py-24 text-white">
         <div className="mx-auto max-w-7xl px-6">
           <h1 className="text-5xl font-black">
-            H-LMP 면역물질 혈청 분석
+            코디팜 급여후 면역지표물질 혈청분석
           </h1>
           <p className="mt-4 text-lg text-gray-300">
             In Vivo Test · RBC / WBC / IgG / IgM / IgA
@@ -16,7 +16,7 @@ export default function SerumAnalysisPage() {
 
       <section className="border-b">
         <div className="mx-auto max-w-7xl px-6 py-4 text-sm text-gray-500">
-          HOME &gt; 분석 / 실증 &gt; H-LMP 면역물질 혈청 분석
+          HOME &gt; 분석 / 실증 &gt; 코디팜 급여후 면역지표물질 혈청분석
         </div>
       </section>
 
