@@ -171,6 +171,22 @@ export default function EggmealPage() {
             />
           </div>
         </section>
+
+        <section className="mt-24">
+          <h3 className="mb-8 text-3xl font-black text-gray-900">
+            7. 에그밀 아미노산 및 지방산 함량
+          </h3>
+
+          <div className="overflow-hidden rounded-3xl border bg-white">
+            <Image
+              src="/eggmeal7.png"
+              alt="에그밀 아미노산 및 지방산 함량"
+              width={1600}
+              height={1200}
+              className="w-full"
+            />
+          </div>
+        </section>
       </section>
     </main>
   );
