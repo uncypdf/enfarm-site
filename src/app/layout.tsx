@@ -100,7 +100,7 @@ export default function RootLayout({
               </a>
 
               <a href="/products" className="hover:text-[#008000]">
-                제품소개
+                제품안내
               </a>
 
               <a href="/analysis" className="hover:text-[#008000]">
