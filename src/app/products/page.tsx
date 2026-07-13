@@ -27,7 +27,7 @@ const products = [
     desc: "100% 통계란 가공품",
     points: ["순수 계란의 천연칼슘과 단백질 동시 공급 효과", "골격과 증체를 통한 면역기능 강화"],
     tagline: "칼슘과 단백질 기반 원료",
-    href: "/products",
+    href: "/products/eggmeal",
   },
 ];
 
