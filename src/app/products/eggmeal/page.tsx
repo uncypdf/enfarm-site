@@ -4,13 +4,13 @@ import Link from "next/link";
 const problemCards = [
   {
     label: "01",
-    title: "임신 모돈의 골격과 지제 강화",
-    desc: "임신 모돈의 골격과 지제를 강화하고 태아의 발육과 성장에 필요한 단백질과 칼슘을 공급합니다.",
+    title: "임신돈의 고른 태아성장 및 다리골격 강화",
+    desc: "임신돈의 골격과 지제를 강화하고 태아의 발육과 성장에 필요한 단백질과 칼슘을 공급합니다.",
   },
   {
     label: "02",
     title: "포유·이유자돈의 성장 기반 형성",
-    desc: "포유·이유자돈의 튼튼한 골격 형성과 조혈기능 강화를 통해 면역과 증체 증진을 지원합니다.",
+    desc: "포유·이유자돈의 튼튼한 골격 형성과 조혈기능 강화를 통해 면역력과 증체를 강화합니다.",
   },
   {
     label: "03",
@@ -128,8 +128,8 @@ export default function EggmealPage() {
         <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           <SectionHeader
             eyebrow="Problem Solution"
-            title="이런 문제를 해결합니다"
-            desc="에그밀은 단순 칼슘제가 아니라, 계란 유래 단백질과 천연 유기태 칼슘을 동시에 공급하는 성장 기반 솔루션입니다."
+            title="이런 효과가 있습니다"
+            desc="에그밀은 단순 칼슘제가 아니라, 계란 유래 단백질과 천연 유기태 칼슘을 동시에 공급하는 기초면역강화를 위한 제품입니다."
           />
 
           <div className="grid gap-5">
