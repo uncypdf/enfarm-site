@@ -20,7 +20,8 @@ export default function ResourceDetailPage() {
             </h2>
             <div className="mt-5 flex flex-wrap gap-6 text-sm text-gray-500">
               <span>작성자 관리자</span>
-              <span>작성일 2025-09-29</span>
+              <span>작성일 2026-07-13
+              </span>
               <span>조회 74</span>
             </div>
           </div>
