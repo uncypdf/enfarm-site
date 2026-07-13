@@ -22,7 +22,7 @@ const problemCards = [
 const featureCards = [
   { value: "100%", label: "통계란분", desc: "난황·난백·난막 유래 영양소" },
   { value: "23%", label: "천연 유기태 칼슘", desc: "근골격 성장과 조혈기능 지원" },
-  { value: "22%+", label: "조단백", desc: "면역항체 형성 단백질원 공급" },
+  { value: "10%+", label: "조지방", desc: "난황 유래 지방과 에너지 공급" },
   { value: "130℃+", label: "고온 멸균", desc: "위생 안전성 강화 공정" },
 ];
 
