@@ -18,7 +18,7 @@ const products = [
     desc: "자돈의 초기 면역력과 PRRS 예방 및 조기회복으로 2차 ABP 예방",
     points: ["PED·PRRS 예방 지원", "이유 전 후 스트레스 예방", "PRRS 초기 회복력 강화로 MSY 향상"],
     tagline: "자돈 초기 면역력 및 성장 관리 솔루션",
-    href: "/products",
+    href: "/products/codifarm",
   },
   {
     name: "에그밀",
