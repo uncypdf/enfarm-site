@@ -20,10 +20,36 @@ const problemCards = [
 ];
 
 const featureCards = [
-  { value: "100%", label: "통계란분", desc: "난황·난백·난막 유래 영양소" },
-  { value: "23%", label: "천연 유기태 칼슘", desc: "근골격 성장과 조혈기능 지원" },
-  { value: "10%+", label: "조지방", desc: "난황 유래 지방과 에너지 공급" },
-  { value: "130℃+", label: "고온 멸균", desc: "위생 안전성 강화 공정" },
+  {
+    value: "100%",
+    label: "통계란분",
+    desc: "난황·난백·난막 유래 영양소를 100% 함유하고 있습니다.",
+  },
+  {
+    value: "23%",
+    label: "천연 유기태 칼슘",
+    desc: "모돈의 골격과 자돈의 근골격 성장 기반을 강화합니다.",
+  },
+  {
+    value: "22%+",
+    label: "조단백",
+    desc: "면역항체 형성에 필요한 단백질원을 공급합니다.",
+  },
+  {
+    value: "10%+",
+    label: "조지방",
+    desc: "에너지 공급 및 영양소 흡수율 향상에 도움을 줍니다.",
+  },
+  {
+    value: "130℃+",
+    label: "고온 멸균 공정",
+    desc: "고온 멸균건조와 품질검사를 통해 위생 안전성을 높입니다.",
+  },
+  {
+    value: "6% 이하",
+    label: "수분",
+    desc: "고온 멸균건조로 위생 안전성과 보관 안정성을 강화합니다.",
+  },
 ];
 
 const compositionRows = [
@@ -185,21 +211,25 @@ export default function EggmealPage() {
             desc="골격·증체·면역에 필요한 세 가지 영양축을 하나의 원료로 공급합니다."
           />
 
-          <div className="mt-12 grid gap-6 lg:grid-cols-3">
-            <ValueCard title="천연 유기태 칼슘" value="23%" desc="모돈의 골격과 자돈의 근골격 성장 기반을 강화합니다." />
-            <ValueCard title="계란 단백질" value="22%+" desc="난황·난백·난막 유래 단백질로 면역항체 형성에 필요한 단백질원을 공급합니다." />
-            <ValueCard title="고온 멸균 공정" value="130℃+" desc="고온 멸균건조와 품질검사를 통해 사료 원료의 위생 안전성을 높입니다." />
-          </div>
 
-          <div className="mt-8 grid gap-6 md:grid-cols-4">
-            {featureCards.map((item) => (
-              <article key={item.label} className="rounded-3xl bg-white p-7 text-center shadow-sm">
-                <p className="text-5xl font-black text-[#0f3d2e]">{item.value}</p>
-                <h3 className="mt-4 text-xl font-black text-gray-900">{item.label}</h3>
-                <p className="mt-3 text-sm leading-6 text-gray-600">{item.desc}</p>
-              </article>
-            ))}
-          </div>
+          <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+  {featureCards.map((item) => (
+    <article
+      key={item.label}
+      className="rounded-3xl bg-white p-8 shadow-sm"
+    >
+      <p className="text-6xl font-black text-[#0f3d2e]">
+        {item.value}
+      </p>
+      <h3 className="mt-5 text-2xl font-black text-[#0f3d2e]">
+        {item.label}
+      </h3>
+      <p className="mt-4 leading-7 text-gray-600">
+        {item.desc}
+      </p>
+    </article>
+  ))}
+</div>
         </div>
       </section>
 
@@ -369,12 +399,3 @@ function SectionHeader({
   );
 }
 
-function ValueCard({ title, value, desc }: { title: string; value: string; desc: string }) {
-  return (
-    <article className="rounded-[2rem] bg-white p-8 shadow-sm">
-      <p className="text-6xl font-black text-[#c49b16]">{value}</p>
-      <h3 className="mt-5 text-2xl font-black text-[#0f3d2e]">{title}</h3>
-      <p className="mt-4 leading-7 text-gray-600">{desc}</p>
-    </article>
-  );
-}
