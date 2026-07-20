@@ -40,6 +40,60 @@ const highlights = [
   { label: "펩신소화율", value: "90% 이상" },
 ];
 
+const usageRows = [
+
+  {
+
+    target: "모돈 분만 전후",
+
+    product: "Amino-F",
+
+    content: [
+
+      "사료 톤당 2kg 첨가",
+
+      "분만 전후 14일간 급여",
+
+    ],
+
+  },
+
+  {
+
+    target: "이유자돈",
+
+    product: ["Amino-F", "Codifarm"],
+
+    content: [
+
+      "이유 후 14일간 급여",
+
+      "Amino-F : 사료 톤당 2kg",
+
+      "Codifarm : 사료 톤당 2kg",
+
+      "(농장 상황에 따라 수의사와 상담 후 조절)",
+
+    ],
+
+  },
+
+  {
+
+    target: "육성초기돈",
+
+    product: "Codifarm",
+
+    content: [
+
+      "사료 톤당 2kg 첨가",
+      "2차 ABP 관리 프로그램 적용",
+
+    ],
+
+  },
+
+];
 export default function CodifarmPage() {
   return (
     <main className="min-h-screen bg-white">
