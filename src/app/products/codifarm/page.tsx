@@ -285,6 +285,94 @@ export default function CodifarmPage() {
           </p>
         </div>
       </section>
+      <section className="bg-[#f7faf7] px-6 py-24">
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-12">
+            <p className="text-sm font-black uppercase tracking-[0.3em] text-[#0b55b7]">
+              Usage Guide
+            </p>
+            <h2 className="mt-4 text-4xl font-black text-[#0f3d2e] md:text-5xl">
+              사용 방법
+            </h2>
+            <p className="mt-5 text-lg leading-8 text-gray-600">
+              Amino-F와 Codifarm의 권장 급여 방법은 아래와 같습니다.
+            </p>
+          </div>
+
+          <div className="overflow-hidden rounded-[28px] border border-gray-200 bg-white shadow-xl">
+            <div className="hidden grid-cols-[1.1fr_0.9fr_1.8fr] bg-[#0b55b7] text-white md:grid">
+              <div className="px-8 py-5 text-2xl font-black">급여대상/시기</div>
+              <div className="border-l border-white/20 px-8 py-5 text-2xl font-black">제품</div>
+              <div className="border-l border-white/20 px-8 py-5 text-2xl font-black">내용</div>
+            </div>
+
+            <div className="divide-y divide-gray-200">
+              {usageRows.map((row) => (
+                <div
+                  key={row.target}
+                  className="grid gap-0 md:grid-cols-[1.1fr_0.9fr_1.8fr]"
+                >
+                  <div className="border-b border-gray-200 bg-[#f6f9ff] px-6 py-6 md:border-b-0 md:px-8 md:py-8">
+                    <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#0b55b7] md:hidden">
+                      급여대상/시기
+                    </p>
+                    <p className="mt-2 text-3xl font-black text-[#0f3d2e] md:mt-0">
+                      {row.target}
+                    </p>
+                  </div>
+
+                  <div className="border-b border-gray-200 px-6 py-6 md:border-b-0 md:border-l md:px-8 md:py-8">
+                    <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#0b55b7] md:hidden">
+                      제품
+                    </p>
+                    {Array.isArray(row.product) ? (
+                      <div className="mt-2 flex flex-col gap-3 md:mt-0">
+                        {row.product.map((item) => (
+                          <span
+                            key={item}
+                            className="inline-flex w-fit rounded-full bg-[#eef5ff] px-4 py-2 text-lg font-black text-[#0b55b7]"
+                          >
+                            {item}
+                          </span>
+                        ))}
+                      </div>
+                    ) : (
+                      <div className="mt-2 md:mt-0">
+                        <span className="inline-flex rounded-full bg-[#eef5ff] px-4 py-2 text-lg font-black text-[#0b55b7]">
+                          {row.product}
+                        </span>
+                      </div>
+                    )}
+                  </div>
+
+                  <div className="px-6 py-6 md:border-l md:px-8 md:py-8">
+                    <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#0b55b7] md:hidden">
+                      내용
+                    </p>
+                    <ul className="mt-2 space-y-3 md:mt-0">
+                      {row.content.map((line, index) => {
+                        const isSub = line.startsWith("(");
+                        return (
+                          <li
+                            key={`${row.target}-${index}`}
+                            className={isSub ? "pl-6 text-lg leading-8 text-gray-500" : "text-2xl font-semibold leading-9 text-gray-900"}
+                          >
+                            {isSub ? line : `• ${line}`}
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="mt-6 rounded-2xl border border-[#dbeafe] bg-[#f6f9ff] px-6 py-5 text-base leading-7 text-gray-600 md:px-8">
+            <span className="font-black text-[#0b55b7]">※ 안내</span> 상기 급여량은 일반적인 권장량이며, 농장 환경 및 질병 상황에 따라 수의사와 상담 후 조절해 주세요.
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
