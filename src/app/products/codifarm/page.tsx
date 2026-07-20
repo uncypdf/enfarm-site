@@ -41,59 +41,42 @@ const highlights = [
 ];
 
 const usageRows = [
-
   {
-
-    target: "모돈 분만 전후",
-
-    product: "Amino-F",
-
+    target: "임신/포유기",
+    product: "아미노 에프",
     content: [
-
-      "사료 톤당 2kg 첨가",
-
-      "분만 전후 14일간 급여",
-
+      "임신돈 : 사료급여량의 0.2%",
+      "포유돈 : 사료급여량의 0.3%",
+      "(고능력 품종이나 12두 이상 포유시 0.1% 증량)",
     ],
-
   },
-
   {
-
+    target: "포유자돈",
+    product: "코디팜",
+    content: ["사료급여량의 0.5%", "(PED 발생시 1%로 증량)"],
+  },
+  {
     target: "이유자돈",
-
-    product: ["Amino-F", "Codifarm"],
-
-    content: [
-
-      "이유 후 14일간 급여",
-
-      "Amino-F : 사료 톤당 2kg",
-
-      "Codifarm : 사료 톤당 2kg",
-
-      "(농장 상황에 따라 수의사와 상담 후 조절)",
-
-    ],
-
+    product: "코디팜",
+    content: ["사료급여량의 0.3%", "(PRRS 양성농장 0.5%로 증량)"],
   },
-
   {
-
-    target: "육성초기돈",
-
-    product: "Codifarm",
-
-    content: [
-
-      "사료 톤당 2kg 첨가",
-      "2차 ABP 관리 프로그램 적용",
-
-    ],
-
+    target: "육성초기(젖돈)",
+    product: "코디팜",
+    content: ["사료급여량의 0.2%", "(PRRS 감염시 0.4%로 증량)"],
   },
-
+  {
+    target: "비육돈",
+    product: ["아미노 에프", "코디팜"],
+    content: [
+      "아미노 에프 : 사료급여량의 0.2%",
+      "(회장염 발생시 0.3%로 증량)",
+      "코디팜 : 사료급여량의 0.1%",
+      "(호흡기 발생시 0.2%로 증량)",
+    ],
+  },
 ];
+
 export default function CodifarmPage() {
   return (
     <main className="min-h-screen bg-white">
