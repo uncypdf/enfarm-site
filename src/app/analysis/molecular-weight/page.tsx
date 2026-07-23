@@ -23,7 +23,7 @@ export default function MolecularWeightPage() {
       <section className="mx-auto max-w-7xl px-6 py-20">
         <div className="mb-16">
           <h2 className="text-4xl font-black text-[#0f3d2e]">
-            코디팜(H-LMP) (고분자 전혈분 → 저분자 펩타이드 및 아미노산化) 분자량 분석
+            코디팜(H-LMP) (고분자 단백질 → 저분자 펩타이드 및 아미노산化) 분자량 분석
           </h2>
 
           <div className="mt-8 rounded-3xl bg-[#f7faf7] p-8">
