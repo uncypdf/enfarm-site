@@ -59,7 +59,7 @@ export default function ContactPage() {
                   <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#008000]">
                     E-mail
                   </p>
-                  <p className="mt-2 text-gray-700">nfarm3103@naver.com</p>
+                  <p className="mt-2 text-gray-700">enfarm1@naver.com</p>
                 </div>
               </div>
             </div>
@@ -85,7 +85,7 @@ export default function ContactPage() {
 
             <form
               className="mt-10 space-y-5"
-              action="mailto:nfarm3103@naver.com"
+              action="mailto:enfarm1@naver.com"
               method="post"
               encType="text/plain"
             >

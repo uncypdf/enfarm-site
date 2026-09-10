@@ -206,7 +206,7 @@ export default function ProductsPage() {
 
             <div>
               <p className="text-sm text-gray-400">E-mail</p>
-              <p className="mt-2 text-xl font-bold">nfarm3103@naver.com</p>
+              <p className="mt-2 text-xl font-bold">enfarm1@naver.com</p>
             </div>
           </div>
         </section>

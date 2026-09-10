@@ -144,7 +144,7 @@ export default function RootLayout({
               </p>
 
               <p>
-                E-mail : nfarm3103@naver.com
+                E-mail : enfarm1@naver.com
               </p>
             </div>
 
