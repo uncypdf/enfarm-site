@@ -363,9 +363,9 @@ export default function AminoFPage() {
               </div>
 
               <div className="rounded-2xl bg-[#edf7ef] p-5">
-                <p className="text-sm font-bold text-[#008000]">후천적 면역</p>
+                <p className="text-sm font-bold text-[#008000]">후천적 면역 강화</p>
                 <h3 className="mt-2 text-xl font-black text-gray-900">
-                  백신·감염 후 항체 강화
+                  백신·감염 후 중화항체 조기형성 지원
                 </h3>
                 <p className="mt-2 text-sm leading-6 text-gray-600">
                   후천면역 항체 생성 및 강화 기간을 안정적으로 연결.
@@ -449,6 +449,7 @@ export default function AminoFPage() {
               ※ 1st A.B.P(PED/PSY) 관리에는 Amino-F를, 2nd A.B.P(PRRS/MSY) 극복에는 Codifarm을 추천합니다.
             </p>
           </div>
+        </div>      
         </div>
       </section>
       <section className="mx-auto max-w-7xl px-6 py-20">
