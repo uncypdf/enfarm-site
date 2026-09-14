@@ -110,7 +110,7 @@ export default function AminoFPage() {
             Sow Immune Solution
           </p>
           <h2 className="mt-4 text-4xl font-black leading-tight text-[#0f3d2e]">
-            모돈의 1차 ABP 관리를 위한
+            모돈의 1차 면역공백기 (Antibody Blank Point) 관리를 위한
             <br />
             H-LMP 저분자 단백질 솔루션
           </h2>
