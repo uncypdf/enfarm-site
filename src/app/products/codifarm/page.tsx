@@ -159,7 +159,7 @@ export default function CodifarmPage() {
               핵심기능
             </h2>
             <p className="mx-auto mt-6 max-w-4xl text-lg leading-8 text-gray-600">
-              100kDa 이상의 혈장과 혈구의 고분자 단백질을 10kDa 이하의 저분자 펩타이드 및
+              100kDa 이상의 햄철함유 고분자 단백질을 10kDa 이하의 저분자 펩타이드 및
               아미노산화(H-LMP) 형태로 효소분해하여 체내흡수력을 강화.
             </p>
           </div>
@@ -173,7 +173,7 @@ export default function CodifarmPage() {
                 고분자 단백질
               </h3>
               <p className="mt-4 leading-7 text-gray-600">
-                혈장·혈구 유래 단백질<br />100kDa 이상
+                햄철함유 고분자 단백질<br />100kDa 이상
               </p>
             </div>
 

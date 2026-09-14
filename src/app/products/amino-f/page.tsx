@@ -414,35 +414,7 @@ export default function AminoFPage() {
                 </p>
               </div>
 
-              <div className="rounded-3xl border border-[#e9d5ff] bg-[#fbf7ff] p-8">
-                <p className="text-sm font-bold text-gray-500">PRRS Immune Response</p>
-                <h3 className="mt-2 text-2xl font-black text-[#6d28d9]">
-                  PRRSV의 약하고 지연된 면역반응
-                </h3>
-
-                <div className="mt-6 rounded-2xl bg-white p-6 shadow-sm">
-                  <p className="text-lg font-black text-gray-900">
-                    감염 후 3~4주 후에 방어면역이 형성
-                  </p>
-                  <ul className="mt-4 space-y-2 text-gray-600">
-                    <li>- 초기 면역항체 형성 지연 시 이유 후 피해 심화</li>
-                    <li>- 빠른 선제적 방어 항체 형성이 핵심</li>
-                  </ul>
-
-                  <div className="mt-6 grid gap-3 sm:grid-cols-3">
-                    <div className="rounded-xl bg-[#ede9fe] px-4 py-3 text-center text-sm font-bold text-[#6d28d9]">
-                      ELISA 항체
-                    </div>
-                    <div className="rounded-xl bg-[#dcfce7] px-4 py-3 text-center text-sm font-bold text-[#15803d]">
-                      중화항체
-                    </div>
-                    <div className="rounded-xl bg-[#dbeafe] px-4 py-3 text-center text-sm font-bold text-[#0b55b7]">
-                      혈중 바이러스
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+              
 
             <div className="mt-8 rounded-3xl border border-[#fed7aa] bg-[#fff7ed] p-8">
               <h3 className="text-center text-2xl font-black text-gray-950">
